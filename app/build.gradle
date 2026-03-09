@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdk 36
+    defaultConfig {
+        applicationId "com.projectdocupro.mobile"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 23
+        versionName "1.1.6"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+//            applicationIdSuffix ".debug"
+            versionNameSuffix = "-DEBUG"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = "21"
+        targetCompatibility = "21"
+    }
+    namespace 'com.projectdocupro.mobile'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    /*annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'*/
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.9.1"
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "androidx.room:room-runtime:2.7.2"
+    annotationProcessor "androidx.room:room-compiler:2.7.2"
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+
+
+// Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.9.1"
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+
+    implementation 'com.android.support:multidex:1.0.3'
+/*
+    implementation 'com.github.rey5137:material:1.2.2'
+*/
+
+    implementation 'com.shehabic.droppy:Droppy:0.6.0@aar'
+
+    implementation'com.squareup.retrofit2:converter-scalars:2.5.0'
+
+    //api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
+    // add library for sizes
+    implementation 'com.intuit.ssp:ssp-android:1.1.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'androidx.exifinterface:exifinterface:1.4.1'
+
+
+
+
+}

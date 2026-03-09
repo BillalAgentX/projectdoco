@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/project_item"
+        android:checkableBehavior="single"
+        android:title="@string/project">
+        <menu >
+            <group >
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_camera"
+
+                />
+            <item
+                android:id="@+id/nav_plans"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/menu_plans" />
+            <item
+                android:id="@+id/nav_photos"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/menu_photos" />
+            <item
+                android:id="@+id/nav_defects_management"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_defects_managment" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/nav_manual"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_manual" />
+        </menu>
+    </item>
+
+</menu>

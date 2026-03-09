@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp"
+    android:paddingTop="12dp"
+    android:paddingRight="@dimen/photo_filter_words_left_padding_edittext"
+    android:paddingBottom="12dp">
+
+    <ImageView
+        android:id="@+id/clock_word"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_clock_grey"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/selected_word"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_unselected_word"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:typeface="sans"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black_text_color" />
+
+    <ImageView
+        android:id="@+id/favorite_word_icon"
+        android:layout_width="@dimen/photo_filter_icon_width"
+        android:layout_height="@dimen/photo_filter_icon_height"
+        android:background="@drawable/ic_unselected_word" />
+
+</LinearLayout>

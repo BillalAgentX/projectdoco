@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/title"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_corner_radius_5dp"
+                    android:layout_marginBottom="@dimen/card_corner_radius_5dp"
+                    android:background="@null"
+                    android:hint="@string/enter_title_msg"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/black_text_color"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b0b0b0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/photo_description_title"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_corner_radius_5dp"
+                        android:layout_marginBottom="@dimen/card_corner_radius_5dp"
+                        android:background="@null"
+                        android:hint="@string/enter_description_msg"
+                        android:inputType="text"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/black_text_color"
+                        android:textSize="18sp"
+                        android:typeface="sans" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#b0b0b0" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/heading_art"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_art_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/size8"
+                    android:paddingBottom="@dimen/size8"
+
+                    >
+
+                    <Switch
+                        android:id="@+id/sw_report_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_corner_radius_5dp"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:text="@string/report_photo_switch_msg"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b0b0b0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photos_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/photos"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/online_photos_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress_bar_view"
+        layout="@layout/progress_bar_material"
+
+        />
+
+</RelativeLayout>

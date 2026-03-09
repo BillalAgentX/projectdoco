@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedlightgraybg"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/customDialog_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/customDialog_titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                 android:gravity="left"
+                android:paddingLeft="@dimen/size8"
+                android:paddingRight="@dimen/size8"
+                android:textSize="17dip"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                         />
+
+
+                    <TextView
+                        android:id="@+id/movie_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customDialog_titleText"
+                        android:textSize="@dimen/size15"
+                        android:text="lhre Bestellung wurde nicht versendet."
+
+                        android:textColor="@color/black"
+                        android:visibility="visible"
+                        android:paddingLeft="@dimen/size8"
+                        android:paddingRight="@dimen/size8"
+                        android:gravity="left"
+                        android:typeface="sans" />
+
+                    <LinearLayout
+                        android:id="@+id/customDialog_bodyLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:paddingTop="5dp">
+
+
+
+                        <Button
+                            android:id="@+id/customDialog_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/cancel"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                        <Button
+                            android:id="@+id/customDialog_okBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:text="@string/ok"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

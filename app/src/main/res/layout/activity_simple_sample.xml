@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.projectdocupro.mobile.photoview.PhotoView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dragon_image"
+            />
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        >
+
+    <ImageView
+        android:id="@+id/crosshair"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/crosshair"
+        />
+
+
+    <ImageView
+        android:id="@+id/rotation_arrow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/rotation_arrow_top"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/appbar"
+        >
+        <ImageView
+            android:id="@+id/iv_zoom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@color/color_grey"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/zoom_in"
+            />
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/reloaad_icon"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:weightSum="2"
+
+    >
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="3dp"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textColor="@color/white_text_color"
+        android:gravity="center"
+        android:background="@drawable/btn_rounded_crnor_gry_background"
+         />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/save"
+        android:textSize="16sp"
+        android:textColor="@color/white_text_color"
+        android:gravity="center"
+        android:background="@drawable/btn_rounded_crnor_gry_background"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_current_matrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        />
+
+    <include layout="@layout/progress_bar_material"
+        android:id="@+id/progress_bar_view"/>
+</RelativeLayout>

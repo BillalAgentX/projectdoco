@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">projectdocu pro</string>
+    <string name="main_menu_title">Hauptmenü</string>
+    <string name="main_menu_drawer_open">Drawer Open</string>
+    <string name="main_menu_drawer_close">Drawer Close</string>
+    <string-array name="main_menu_entry_strings">
+        <item>Kamera</item>
+        <item>Lokale Fotos</item>
+        <item>Projektauswahl</item>
+        <item>Planauswahl</item>
+        <item>Einstellungen</item>
+        <item>Über projectdocu</item>
+        <item>Anleitung</item>
+    </string-array>
+    <string name="email">Login:</string>
+    <string name="project">Projekt:</string>
+    <string name="project_type_all">Alle Projekte</string>
+    <string name="project_type_favorites">Favoriten Projekte</string>
+    <string name="project_type_all_short">Alle</string>
+    <string name="project_type_favorites_short">Favoriten</string>
+    <string name="plan_type_all">Planauswahl</string>
+    <string name="plan_type_mobile">Favoriten Pläne</string>
+    <string name="plan_type_all_short">Alle</string>
+    <string name="plan_type_mobile_short">Pläne</string>
+    <string name="local_photos_title">Lokale Fotos</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_camera_resolution">Kamera-Auflösung</string>
+    <string name="settings_auto_gps_distance_title">Automatische Fotoverortung bei</string>
+    <string name="settings_auto_gps_distance_deactivated">Deaktiviert</string>
+    <string name="settings_deletetimer">Foto Löscherinnerung</string>
+    <string name="settings_compass_correction">Kompass-Korrektur</string>
+    <string name="settings_camera_resolution_title">Kameraauflösung</string>
+    <string name="settings_resolution">Auflösung</string>
+
+    <string-array name="settings_entry_strings">
+        <item>Blickrichtung durch Kompassfunktion (Nur nutzbar bei geo-referenzierten oder genordeten Plänen)</item>
+        <item>GPS aktivieren</item>
+        <item>Standort durch GPS bestimmen (Nur nutzbar bei geo-referenzierten Plänen)</item>
+        <item>Automatisch immer letztes Projekt laden</item>
+        <item>Automatisch immer letzten Plan laden</item>
+        <item>Fotos über mobiles Datennetz synchronisieren</item>
+        <item>Über mobiles Datennetz Fotos vorher verkleinern</item>
+        <item>Fotos über WLAN Verbindung synchronisieren</item>
+        <item>Über WLAN Verbindung Fotos vorher verkleinern</item>
+        <item>Fotos mit original Größe über WLAN nachladen</item>
+        <item>Synchronisation im Hintergrund erlauben</item>
+        <item>Immer neueste Fotos zuerst synchronisieren</item>
+        <item>Schlagwort-Favoriten in Foto-Vorschau anzeigen</item>
+        <item>Kamera-Auflösung</item>
+        <item>Auto-GPS-Distanz</item>
+        <item>Foto Löscherinnerung</item>
+        <item>Kompass Korrektur</item>
+    </string-array>
+    <string name="error_dialog_title">Fehler</string>
+    <string name="attention_dialog_title">Achtung</string>
+    <string name="show_tutorial_dialog">Möchten Sie die Anleitung sehen ?</string>
+    <string name="user_logout_dialog">Möchten Sie sich wirklich ausloggen?</string>
+    <string name="delete_location_dialog">Möchten sie die aktuelle Verortung löschen ?</string>
+    <string name="login_error">Sie konnten nicht eingeloggt werden. Bitte überprüfen Sie Ihre Angaben.</string>
+    <string name="unvalid_user_error">Es ist momentan kein gültiger User eingeloggt.</string>
+    <string name="unvalid_project_error">Es ist momentan kein gültiges Projekt ausgewählt.</string>
+    <string name="project_update_error">Das ausgewählte Projekt konnte aufgrund eines Netzwerkfehlers nicht verfügbar gemacht werden.</string>
+    <string name="plan_update_error">Der ausgewählte Plan konnte aufgrund eines Netzwerkfehlers nicht verfügbar gemacht werden.</string>
+    <string name="photo_not_found_error">Das Foto konnte nicht gefunden werden.</string>
+    <string name="photo_in_sync_error">Das Foto wird gerade synchronisiert und kann daher nicht gelöscht werden.</string>
+    <string name="send_error_report">Möchten Sie einen Fehlerreport schicken ?</string>
+    <string name="delete_photo_dialog">Möchten Sie das Foto wirklich löschen?</string>
+    <string name="delete_flag_dialog">Möchten Sie die Verortung wirklich löschen?</string>
+    <string name="which_photos_to_delete_dialog">Welche Fotos möchten Sie löschen?</string>
+    <string name="project_not_fully_syncronized_dialog">Es sind noch nicht alle Projektdaten synchronisiert! Möchten Sie das Projekt trotzdem mit allen zugehörigen Daten entfernen?</string>
+    <string name="plan_not_fully_syncronized_dialog">Es sind noch nicht alle Plandaten synchronisiert! Möchten Sie den Plan trotzdem mit allen zugehörigen Daten entfernen?</string>
+    <string name="remove_syncronized_project_dialog">Möchten Sie das Projekt wirklich mit allen zugehörigen Daten entfernen?</string>
+    <string name="remove_syncronized_plan_dialog">Möchten Sie den Plan wirklich mit allen zugehörigen Daten entfernen?</string>
+    <string-array name="delete_photo_options">
+        <item>Alle</item>
+        <item>Älter als 1 Woche</item>
+        <item>Älter als 2 Wochen</item>
+        <item>Älter als 4 Wochen</item>
+        <item>Älter als 3 Monate</item>
+        <item>Abbruch</item>
+    </string-array>
+    <string name="toast_loading_project">Lade Projekt: </string>
+    <string name="toast_loading_plan">Lade Plan: </string>
+    <string name="toast_location_deleted">Verortung wurde gelöscht</string>
+    <string name="toast_location_saved">Verortung wurde gespeichert</string>
+    <string name="ok">Ok</string>
+    <string name="delete">Löschen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="photos_to_synchronize">Foto(s) zu synchronisieren</string>
+    <string name="photo_description_title">Beschreibung</string>
+    <string name="photo_memo_title">Sprachaufnahmen</string>
+    <string name="photo_tags_title">Foto Verschlagwortung</string>
+    <string name="tags">Schlagworte:</string>
+    <string name="tags_type_all">Alle</string>
+    <string name="tags_type_favorites">Favoriten</string>
+    <string name="photo_description_save_confirmation_text">Beschreibung wurde gespeichert!</string>
+    <string name="memos_list_title_text">Sprachaufnahmen</string>
+    <string name="key_plan_list_array_adapter_plan_width">KEY_PLAN_WIDTH</string>
+    <string name="key_plan_list_array_adapter_plan_height">KEY_PLAN_HEIGHT</string>
+    <string name="key_plan_list_array_adapter_localpdphotoid">KEY_LOCALPDPHOTOID</string>
+    <string name="login_screen">Anmelden</string>
+    <string name="project_selection">Project Auswahl</string>
+    <string name="plan_selection">Plan Auswahl</string>
+    <string name="show_plan">Planansicht</string>
+    <string name="show_photo">Photoansicht</string>
+    <string name="local_photos">Lokale Fotos</string>
+    <string name="settings">Einstellungen</string>
+    <string name="about_us">Über projectdocu</string>
+    <string name="help">Hilfe / Anleitung</string>
+    <string name="empty" />
+    <string name="error_report_sent">Fehlerreport wurde an ProjectDocu geschickt. </string>
+    <string name="error_report_failed">Fehlerreport konnte nicht verschickt werden.</string>
+    <string name="text_enter_username">Benutzername</string>
+    <string name="text_enter_password">Passwort</string>
+    <string name="text_remember_logindata">Zugangsdaten merken</string>
+    <string name="text_forgot_password">Passwort vergessen?</string>
+    <string name="text_forgot_password_heading">Passwort vergessen</string>
+    <string name="text_register_user">Account erstellen</string>
+    <string name="toast_gps_out_of_range">Position nicht im plan!</string>
+    <string name="toast_gps_accuraccy_imprecise_info">GPS Position ist zu ungenau!</string>
+    <string name="toast_gps_accuraccy_info">GPS Signal Genauigkeit:</string>
+    <string name="toast_plan_auto_gps_located">Bild wurde automatisch GPS Verorted!</string>
+    <string name="toast_gps_no_signal">Kein GPS Signal!</string>
+    <string name="toast_plan_no_gps_reference">Plan ist nicht GEO-Referenziert! GPS Position kann nicht zugewiesen werden.</string>
+    <string name="toast_plan_no_auto_gps">Auto GPS nicht möglich. GPS zu ungenau!</string>
+    <string name="toast_auto_position_off">Auto GPS deaktiviert</string>
+    <string name="toast_auto_position_on">Auto GPS aktiviert</string>
+    <string name="toast_auto_direction_off">Auto Kompass deaktiviert</string>
+    <string name="toast_auto_direction_on">Auto Kompass aktiviert</string>
+    <string name="toast_plan_not_loaded">Kein Plan geladen, Verortung nicht möglich!</string>
+    <string name="sync_stats_header">Synchronisationsstatus</string>
+    <string name="sync_stats_photos_total">Fotos Gesamt:</string>
+    <string name="sync_stats_photos_original">Fotos im Original synchronisiert:</string>
+    <string name="sync_stats_photos_reduced">Fotos verkleinert synchronisiert:</string>
+    <string name="sync_stats_photos_unsynced">Fotos noch nicht synchronisiert:</string>
+    <string name="toast_project_not_syncronized">Projekt wurde noch nicht synchronisiert !</string>
+    <string name="toast_plan_not_syncronized">Plan wurde noch nicht synchronisiert !</string>
+    <string name="about_us_text">Die projectdocu Erfolgsgeschichte | Praxisgerecht und innovativ\n\nAuf Anfrage von Großunternehmen wurde projectdocu für komplexe Bauprojekte entwickelt. In der Referenzphase sind kleine und mittelständische Unternehmen hinzugetreten, um projectdocu als Standardlösung zu etablieren. Das 2012 gegründete Unternehmen ist in Düsseldorf und Mülheim an der Ruhr ansässig und beschäftigt heute ein vielseitiges Team vom praxiserfahrenen Bauingenieur bis hin zum innovativen IT-Experten.\n\nImpressum\n\nAngaben gem. § 5 TMG\n\nprojectdocu GmbH\n\nNiederkasseler Lohweg 18\n40547 Düsseldorf\n\nTelefon + 49 (0) 211 / 74 95 527 -0\nTelefax  + 49 (0)211 / 74 95 527 – 9\n\nInternet: https://www.projectdocu.com\nE-Mail: info@projectdocu.de\n\nSteuernummer: 103/5753/2264\nUst.-Ident.-Nr.: DE287566381\n\nSitz der Gesellschaft: Düsseldorf\nHandelsregister Düsseldorf: HRB-Nr. 68804\n\nGeschäftsführer: André Henniger, Stefan Schrock\n\nDatenschutz\nDatenschutz@projectdocu.de\nhttps://www.projectdocu.com/content/datenschutz\n</string>
+    <string name="toast_selection_mode_info">Um den Selektions-Modus anzuschalten, klicken Sie bitte 1 Sekunden auf den Share-Button.</string>
+    <string name="toast_synchronisation_restarted">Synchronisationsprozess wird neu gestartet</string>
+    <string name="toast_login_failed">Login nicht möglich. Benutzername oder Passwort falsch</string>
+    <string name="check_credentials">Bitte überprüfen Sie Ihre Anmeldeinformationen und versuchen Sie es erneut.</string>
+
+
+    <string name="menu_camera">Kamera</string>
+    <string name="menu_plans">Pläne</string>
+    <string name="menu_photos">Fotos</string>
+    <string name="menu_defects_managment">Mängelverwaltung</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="menu_about">Über projectdocu</string>
+    <string name="menu_manual">Handbuch</string>
+    <string name="english_label">English</string>
+    <string name="german_label">German</string>
+    <string name="place_label">Ort:</string>
+    <string name="company_label">Firma:</string>
+    <string name="photos_label">Fotos:</string>
+    <string name="open_label">Öffnen</string>
+    <string name="defects">Mängel</string>
+
+    <string name="company_new_project_filed">Kunde</string>
+    <string name="project_name">Projecktname</string>
+    <string name="project_name_new">Projektname</string>
+    <string name="city">Stadt</string>
+    <string name="info_heading">Info Heading</string>
+    <string name="info_sub_heading">Info Sub Heading</string>
+    <string name="info">Info</string>
+
+    <string name="enable_gps">GPS aktivieren</string>
+    <string name="find_position_with_gps_only_only_for_geo_referenced_plans">Standort durch GPS bestimmen (nutzbar bei georeferenzierten Plänen)</string>
+    <string name="viewing_direction_through_compass_functions">Blickrichtung durch Kompassfunktion (Nur nutzbar bei geo-referenzierten Plänen)</string>
+    <string name="gps_scale">Erforderliche Genauigkeit bei GPS-Standortbestimmung</string>
+    <string name="automatically_load_last_project">Automatisch immer letztes Projekt laden</string>
+    <string name="automatically_load_last_plan">Automatisch immer letzten Plan laden</string>
+    <string name="sync_photos_over_mobile_net">Fotos über mobiles Datennetz synchronisieren</string>
+    <string name="sync_photos_before_sending_over_mobile_net">Über mobiles Datennetz Fotos vorher verkleinern</string>
+    <string name="sync_photos_over_wlan">Fotos über Wlan Verbindung synchronisieren</string>
+    <string name="sync_photos_before_sending_over_wlan">Über Wlan Verbindung Fotos vorher verkleinern</string>
+    <string name="reload_images_with_original_size_over_wlan">Fotos mit OriginalgröBe über Wlan nachladen</string>
+    <string name="allow_sync_in_background">Synchronisation im Hintergrund erlauben</string>
+    <string name="first_load_newest_images">Immer neuste Fotos zuerst synchronisieren</string>
+    <string name="buzzwords_favorites_view_in_preview">Schlagwort-Favoriten in FotoVorschau anzeigen</string>
+    <string name="camera_resolution">Kamera Auflösung</string>
+    <string name="logout_label">Logout</string>
+    toast_login_failed
+    <string name="save">Speichern</string>
+    <string name="number">Nummer:</string>
+    <string name="select_customer">Kunde auswählen</string>
+    <string name="search">Suchen</string>
+    <string name="brush_settings">Pinseleinstellungen</string>
+    <string name="brush_color">Pinselfarbe</string>
+    <string name="group">Schlagwort Gruppe</string>
+    <string name="new_word">Neues Schlagwort</string>
+    <string name="slogan_description">Schlagwort Bezeichnung</string>
+    <string name="enter_description">Bezeichnung eingeben</string>
+    <string name="create_new_project">Projekt anlegan</string>
+    <string name="select_group">Gruppe auswählen</string>
+    <string name="dialog_title">Warnen</string>
+    <string name="enter_project_name">Name eingeben</string>
+    <string name="enter_city">Ort eingeben</string>
+    <string name="tab_favorite">Favoriten</string>
+    <string name="tab_all">Alle</string>
+    <string name="tab_lastused">Zuletztgenutzt</string>
+    <string name="tab_lastused_new">Zuletzt genutzt</string>
+    <string name="message">Botschaft</string>
+    <string name="project_created">Projekt erstellt</string>
+    <string name="project_created_new">Projekt erstellen</string>
+    <string name="projects">Projekte</string>
+    <string name="project_details">Übersicht</string>
+    <string name="local">Lokal</string>
+    <string name="online">Online Gallerie</string>
+    <string name="save_photo">Foto speichern</string>
+    <string name="list">Liste</string>
+    <string name="comments">Fotobeschreibung eingeben</string>
+
+    <string name="photo_description">Beschreibung</string>
+    <string name="add_description">Beschreibung</string>
+    <string name="description">Titel</string>
+    <string name="add_word">Neues Schlagwort</string>
+    <string name="defect_details">Mangel erstellen</string>
+    <string name="record_audio">Sprachmemos</string>
+    <string name="plan_detail">Plan</string>
+    <string name="word_name_empty">Geben Sie vor dem Speichern ein neues Wort ein</string>
+    <string name="error_create_project">Ein Projekt kann nicht erstellt werden.</string>
+    <string name="brush">Skizzieren</string>
+    <string name="unable_create_tag">Tag konnte nicht erstellt werden.</string>
+
+    <!--tarnlated by Usman-->
+    <string name="title_activity_home">HomeAktivität</string>
+    <string name="navigation_drawer_open">Navigationsschublade öffnen</string>
+    <string name="navigation_drawer_close">Navigationsleiste schließen</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigationskopfzeile</string>
+    <string name="action_add_project">Projekt hinzufügen</string>
+
+    <!--translation from umair's file-->
+
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="photos_label_2">Fotos</string>
+    <string name="total_photo_title_sync_screen">Fotos Gesamt:</string>
+    <string name="sync_photo_title_sync_screen">Synchronisierte Fotos:</string>
+    <string name="un_sync_photo_title_sync_screen">Fotos noch nicht synchronisiert:</string>
+
+    <string name="project_photo_title_sync_screen">Fotos in diesem Projekt:</string>
+    <string name="project_sync_photo_title_sync_screen">Fotos im Orignal synchronisiert:</string>
+    <string name="project_un_sync_photo_title_sync_screen">Fotos noch nicht synchronisiert</string>
+    <string name="sync_status_title_screen">Synchronisierungsstatus</string>
+
+
+    <string name="heading_status">Status</string>
+    <string name="heading_art">Art</string>
+    <string name="heading_gewerk">Gewerk</string>
+    <string name="heading_deadline">Frist</string>
+    <string name="heading_responsible">Verantwortlich</string>
+    <string name="heading_creator">Ersteller</string>
+    <string name="heading_date">Datum</string>
+    <string name="infos">Info</string>
+
+    <string name="filter_by">Filtern nach:</string>
+    <string name="reset_filter">Zurücksetzen</string>
+    <string name="filter">Filtern</string>
+
+    <string name="start_date">Datum von:</string>
+    <string name="end_date">Datum bis:</string>
+    <string name="notice_date">Festgestellt am</string>
+    <string name="notify_date">Frist</string>
+    <string name="done_date">Erledigt</string>
+    <string name="open_status">Offen</string>
+    <string name="progress_status">Prüfen</string>
+    <string name="close_status">Erledigt</string>
+    <string name="restleistung_art">Restleistung</string>
+    <string name="mangel_art">Mangel</string>
+
+    <string name="deadline">Frist überfällig</string>
+    <string name="done_date_filter">Erledigt</string>
+    <string name="open_status_filter">Offen</string>
+    <string name="progress_status_filter">Prüfen</string>
+
+    <string name="heading_sorting">Sortierung</string>
+    <string name="heading_created_date">Datum</string>
+    <string name="heading_photo_number">Nummer</string>
+    <string name="heading_photo_desc">Beschreibung</string>
+    <string name="heading_localized_photo">Verortetes Foto</string>
+    <string name="heading_photo_keyword">Schlagworte</string>
+    <string name="heading_photo_plans">Pläne</string>
+    <string name="heading_photo_switch_decs">
+Beschriebenes Foto</string>
+    <string name="heading_photo_switch_keyword">Verschlagwortetes Foto</string>
+    <string name="heading_photo_creator">Ersteller</string>
+
+
+    <string name="sort_asc_by_date">Nach Datum absteigend</string>
+    <string name="sort_des_by_date">Nach Datum aufsteigend</string>
+    <string name="sort_run_id_asc_by_date">Nach Nummer aufsteigend</string>
+    <string name="sort_run_id_des_by_date">Nach Nummer absteigend</string>
+
+
+    <string name="defect_screen_priorities">Priorität</string>
+    <string name="defect_screen_highest_priorities">Hoch</string>
+    <string name="defect_screen_lowest_priorities">Niedrig</string>
+
+    <string name="notes">Notizen</string>
+    <string name="defect_screen_frist">Frist</string>
+    <string name="defect_screen_days">Tage</string>
+    <string name="defect_screen_flaw_name">Titel</string>
+    <string name="defect_screen_flaw_name_empty_msg">
+Leerer Fehlername kann nicht synchronisiert werden</string>
+    <string name="next">Nächster</string>
+    <string name="title">Titel</string>
+    <string name="enter_title_msg">Titel eingeben</string>
+    <string name="enter_description_msg">Beschreibung eingeben</string>
+    <string name="report_photo_switch_msg">Pläne anhängen</string>
+    <string name="photos">Fotos</string>
+    <string name="report">Fehlerbericht senden</string>
+
+    <string name="report_menu">Erstellen</string>
+
+
+
+    <string name="create_report_title">Bericht erstellen</string>
+    <string name="choose_photos_report_title">Fotos auswählen</string>
+    <string name="report_choose_photo_msg">Bitte wählen Sie einige Bilder aus, um fortzufahren.</string>
+
+    <string name="add_mangel">Neuer Mangel</string>
+    <string name="mangel_listing">Mängelliste</string>
+    <string name="mangel_detail">Mangel Details</string>
+    <string name="mangel_detail_2">Details</string>
+    <string name="project_without_colon">Projekt</string>
+    <string name="discipline">Gewerk</string>
+
+    <string name="no_defect_lisiting">Nr</string>
+    <string name="sync_label">Synchronisieren</string>
+    <string name="brush_size_label">Pinselgröße</string>
+    <string name="undo_label">Rückgängig machen</string>
+
+    <string name="synchronize">Synchronisieren</string>
+
+    <string name="already_sync_project_msg">Please wait project is syncing?</string>
+    <string name="sync_project_before_msg">Das Projekt wurde noch nicht heruntergeladen. Möchten Sie das Projekt synchronisieren?</string>
+    <string name="unsync_project_msg">Sind Sie sicher, dass Sie das Projekt nicht synchronisieren und alle Daten löschen möchten?</string>
+    <string name="sync_project_msg">Möchten Sie das Projekt synchronisieren, kann dies einige Zeit dauern?</string>
+    <string name="plan_photo_crop_msg">Das zugeschnittene Bild wurde gespeichert.</string>
+    <string name="no_internet_message">Verbindungsproblem. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut</string>
+    <string name="server_unreachable_message">Wir können keine Verbindung zum Server herstellen. Bitte versuchen Sie es später</string>
+
+    <string name="dircard_changes_defect_msg">Sollen die Änderungen gespeichert werden?</string>
+
+    <string name="minimize_photo_setting_message">Über mobiles Datennetz Fotos vorher verkleinern</string>
+    <string name="sync_photos_ascending">Fotos aufsteigend synchronisieren</string>
+    <string name="user_logout_msg">Wenn Sie sich jetzt ausloggen, werden alle Daten in dieser App entfernt! Sind Sie sicher?</string>
+    <string name="image_delete_msg">Möchten Sie das Bild wirklich löschen?</string>
+    <string name="plan_location_delete_msg">Möchten Sie den Planstandort wirklich löschen?</string>
+    <string name="defect_delete_msg">Möchten Sie diesen Fehler wirklich löschen?</string>
+    <string name="app_permission_msg">
+Die App benötigt mehr Berechtigungen! Bitte aktivieren Sie diese in den Systemeinstellungen des Mobiltelefons!</string>
+    <string name="enter_keyword_msg">Geben Sie zuerst das Text-Schlagwort ein</string>
+
+    <string name="shortly_sync_photo_title_sync_screen">Fotos verkleinert synchronisiert:</string>
+    <string name="project_defect_msg">leerer Fehlername kann nicht synchronisiert werden</string>
+
+    <string name="created_date">Erstellt am</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+
+    <string name="total_defect_title_sync_screen">Mängel Gesamt:</string>
+    <string name="sync_defect_sync_screen">Mängel synchronisiert:</string>
+    <string name="un_sync_defect_title_sync_screen">Mängel noch nicht synchronisiert:</string>
+
+    <string name="project_defect_title_sync_screen">Mängel in diesem Projekt:</string>
+
+    <string name="custom_dialog_title"></string>
+
+    <string name="unscyned_photo_message">Foto(s) sind noch nicht synchronisiert. Möchten Sie den Synchronisierungsvorgang jetzt starten?</string>
+
+
+
+    <string name="abous_us_new">Impressum\n\nprojectdocu GmbH\n\nBüro B67\nFriedhofstraße 140\n45478 Mülheim an der Ruhr\nDeutschland\n\nTelefon: +49 208-30 99 27-0\nTelefax: +49 208-30 99 27 -99\n\nE-mail: info@projectdocu.com\nInternet: www.projectdocu.com\n\nHRB 33902 Amtsgericht Duisburg\nGeschäftsführer: André Henniger, Stefan Schrock\n\nUSt-IdNr.: DE287566381\n\nAGB\nhttps://projectdocu.com/information/\n\nDatenschutz\nhttps://projectdocu.com/datenschutz</string>
+
+    <string name="gps_settings">GPS-Einstellungen</string>
+    <string name="gps_settings_des">GPS ist nicht aktiviert. Möchten Sie zum Einstellungsmenü gehen?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="please_calibate">Bitte kalibrieren Sie Ihr Gerät, um korrekte Ergebnisse zu erhalten</string>
+
+
+    <string name="quick_mangel">Schnell hinzufügen</string>
+
+
+</resources>

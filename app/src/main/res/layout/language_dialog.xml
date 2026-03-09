@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/dialog_background"
+    >
+    <RadioGroup
+        android:id="@+id/language_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/english_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:buttonTint="#25d021"
+            android:textColor="@color/black_text_color"
+            android:text="@string/english_label"/>
+        <RadioButton
+            android:id="@+id/german_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:buttonTint="#25d021"
+            android:textColor="@color/black_text_color"
+            android:text="@string/german_label" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white_text_color"
+        android:padding="16dp"
+        android:background="@drawable/login_btn_background"
+        android:text="Select Language"/>
+</LinearLayout>

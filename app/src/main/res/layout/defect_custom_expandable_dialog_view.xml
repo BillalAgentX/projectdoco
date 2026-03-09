@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LastUsedFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_expand_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/light_gry_filter_bg"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="visible"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@color/light_gry_filter_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/color_grey">
+
+            <TextView
+                android:id="@+id/tv_reset_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginEnd="@dimen/size8"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_crnor_white_background"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/reset_filter"
+                android:textColor="#4F4F4F"
+                android:textSize="13sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="@dimen/size8"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_crnor_white_background"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/color_black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/simple_expandable_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_gry_filter_bg"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:visibility="visible"
+
+            ></ExpandableListView>
+    </LinearLayout>
+
+
+</LinearLayout>

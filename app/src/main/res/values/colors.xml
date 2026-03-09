@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#283655</color>
+    <color name="colorPrimaryDark">#1B2438</color>
+    <color name="colorAccent">#553b28</color>
+
+    <color name="white_text_color">#ffffff</color>
+    <color name="project_list_background_light">#e8e8e8</color>
+    <color name="project_list_background_dark">#f0f0f0</color>
+    <color name="memo_list_background_light">#e9f4ea</color>
+    <color name="memo_list_background_dark">#d0e8d2</color>
+    <color name="layout_background_color">#494949</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_grey">#808080</color>
+    <color name="color_black">#000000</color>
+    <color name="color_actionbar">#b9b9b9</color>
+    <color name="black_text_color">#000000</color>
+    <color name="light_gry_filter_bg">#E3E3E5</color>
+    <color name="light_gry_filter_child_bg">#F9F9FB</color>
+
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="button_bg">#00AAA1</color>
+    <color name="view_color">#D7D7D7</color>
+    <color name="gray_color">#f1eeee</color>
+    <color name="view_horozontal">#b6b5b5</color>
+    <color name="fb_btn_color">#5E81D2</color>
+    <color name="gplus_btn_color">#DA5034</color>
+    <color name="forgot_text_color">#6A90DB</color>
+    <color name="app_background_color">#F0F0F0</color>
+    <color name="red_color">#f52c04</color>
+    <color name="green_color">#296b06</color>
+    <color name="blue_color">#002eff</color>
+    <color name="text_color">#00AAA1</color>
+    <color name="e_ticket_bg">#E6E6E6</color>
+    <color name="light_red_color">#e26d55</color>
+    <color name="side_menu_item_color">#4A1B61</color>
+    <color name="text_btn_color">#462167</color>
+    <color name="light_black">#686868</color>
+    <color name="orange_color">#f56404</color>
+    <!--#B3E5E2-->
+    <color name="list_color">#B3E5E2</color>
+
+
+    <color name="accent_material_light">#0091ea</color>
+    <array name="in_colors_light">
+        <item>#4Bf47820</item>
+        <item>#33f47820</item>
+        <item>#19f47820</item>
+    </array>
+
+    <color name="green_inner_new">#d8ebdc</color>
+    <color name="green_new">#67BB6A</color>
+    <color name="red_new">#EF5350</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="blue_news">#536DFE</color>
+    <color name="gray_icon_bg">#E0E0E0</color>
+    <color name="orange_adv">#FF5722</color>
+    <color name="red_inner_new">#F2D7D8</color>
+    <!--<color name="colorPrimary">#434343</color>-->
+    <color name="colorAccentBusPro">#2B77FC</color>
+    <color name="gray_bg">#515252</color>
+    <color name="gray_text">#5E5E5E</color>
+    <color name="light_gray_easypay">#EEEEEE</color>
+    <color name="gray_light_bg">#E5E8E9</color>
+    <color name="seat_red_color">#A51300</color>
+    <color name="transparent_black_20">#33000000</color>
+    <color name="transparent_black_50">#80000000</color>
+    <color name="transparent_orange_20">#33f47820</color>
+    <color name="black">#2B2B2B</color>
+    <color name="black_jet">#000000</color>
+    <color name="tran_black">#99000000</color>
+    <color name="signup_edit">#72A6BE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_50_opacity">#33FFFFFF</color>
+    <color name="white_10_opacity">#1AFFFFFF</color>
+    <color name="white_hover">#f6f6f6</color>
+    <color name="orange_tab_indicator">#f47820</color>
+    <color name="grey_button">#393939</color>
+    <color name="grey_button_hover">#272727</color>
+    <color name="black_80_opacity">#CC000000</color>
+    <color name="gray_menu">#616161</color>
+    <color name="gray_menu_hover">#434343</color>
+    <color name="fb_icon_color">#4866A6</color>
+    <color name="fb_icon_color_hover">#324774</color>
+    <color name="gplus_icon_color">#EE5037</color>
+    <color name="gplus_icon_color_hover">#be402c</color>
+    <color name="black_dialog">#353535</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_leftmenu">#E6009cb4</color>
+    <color name="orange_leftmenu">#E6b4621c</color>
+    <color name="cyan">#00AFF0</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="gray">#6a6a6a</color>
+    <color name="light_gray_button">#daddde</color>
+    <color name="status_bar">#b2b2b2</color>
+    <color name="light_gray_button_hover">#c4c6c7</color>
+    <color name="light_gray_bg_hover">#c2c4c5</color>
+    <color name="light_gray_bg">#F3F6F7</color>
+    <color name="history_mustard">#FFE696</color>
+    <color name="blue_withdraw">#049DBC</color>
+    <color name="gray_lighter">#eeeeee</color>
+    <color name="gray_lighter_light_hover">#d6d6d6</color>
+    <color name="gray_lighter_hover">#bebebe</color>
+    <color name="gray_material_800">#424242</color>
+    <color name="graytext">#b2b2b2</color>
+    <color name="gray_darker">#2e2e2e</color>
+    <color name="red">#ff0000</color>
+    <color name="maroon">#6F1131</color>
+    <color name="chalo_purple">#ffc52782</color>
+    <color name="ticket_grey">#575757</color>
+    <color name="gray_border">#CDD0D1</color>
+    <color name="button_verify">#66bb6a</color>
+    <color name="button_verify_hover">#004f08</color>
+    <color name="yellow">#ffff00</color>
+    <color name="black_dark_1">#2E2E2E</color>
+    <color name="black_dark_0">#292929</color>
+    <color name="recipt_gray">#D8D8D8</color>
+    <color name="add_balance_gray">#80d8d8d8</color>
+    <color name="black_dark_2">#363636</color>
+    <color name="black_dark_3">#525252</color>
+    <color name="orange">#F6CB2B</color>
+    <!--<color name="et_orange">#f47820</color>-->
+    <color name="et_orange">#F8963C</color>
+    <color name="et_orange_hover">#c67830</color>
+    <color name="green_seat">#66BB6A</color>
+    <!--<color name="et_orange_hover">  #aa5416</color>-->
+    <color name="et_orange_background_light">#f8ae79</color>
+    <!--<color name="td_blue">#019FBC</color>-->
+    <color name="td_blue">#20AFCC</color>
+
+    <color name="action_bar_background">#262626</color>
+    <color name="td_blue_hover">#006f83</color>
+    <color name="green">#00ff00</color>
+    <color name="light_yellow">#ffe1df9e</color>
+    <color name="add_balance_gray_seprator">#CCCCCC</color>
+    <color name="pink">#cd4c97</color>
+    <color name="light_pink">#FF88E2</color>
+    <color name="purple_list_seprator">#695451</color>
+    <color name="pink_tran">#99cd4c97</color>
+    <color name="purple">#8000ff</color>
+    <color name="submit_green">#ff51a351</color>
+    <color name="submit_green_pressed">#ff3e873e</color>
+    <color name="selected_background">#f2f2f2</color>
+    <color name="main_button_normal">#e4e6e7</color>
+    <color name="omni_button_background">#cdcfcf</color>
+    <color name="sub_button_pressed">#ffffff</color>
+    <color name="sub_button_normal">#f1eef2</color>
+    <color name="main_button_pressed">#00AFF0</color>
+    <color name="main_button_font">#7e7e7e</color>
+    <color name="selected_background_translucent">#bbf2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_progress">#80FFFFFF</color>
+    <color name="translucent">#bbffffff</color>
+    <color name="translucent2">#B8C3C3C3</color>
+    <color name="translucent_with_80_per">#cc000000</color>
+    <color name="translucent_white">#99ffffff</color>
+    <color name="translucent_dark">#99000000</color>
+    <color name="translucent_dark_half">#50000000</color>
+    <color name="separator_color">#ffdedede</color>
+    <color name="seprator_color_hover">#b1b1b1</color>
+    <color name="seprator_color_light_shade">#f8f8f8</color>
+    <color name="button_background_grey">#ffdedede</color>
+    <color name="font_color">#ff2d2d2d</color>
+    <color name="tab_greyscale_1">#ff2d2d2d</color>
+    <color name="tab_greyscale_2">#ff3d3d3d</color>
+    <color name="tab_greyscale_3">#ff4d4d4d</color>
+    <color name="tab_greyscale_4">#ff5d5d5d</color>
+    <color name="rating_one">#ffcb202d</color>
+    <color name="rating_two">#ffde1d0f</color>
+    <color name="rating_three">#ffff7800</color>
+    <color name="rating_four">#ffffba00</color>
+    <color name="rating_five">#ffedd614</color>
+    <color name="rating_six">#ff9acd32</color>
+    <color name="rating_seven">#ff5ba829</color>
+    <color name="rating_eight">#ff3f7e00</color>
+    <color name="rating_nine">#ff305d02</color>
+    <color name="settings_border">#ff5d5d5d</color>
+    <color name="settings_background">#ff4d4d4d</color>
+    <color name="settings_background_dark">#ff2d2d2d</color>
+    <color name="settings_background_dark_translucent">#bb2d2d2d</color>
+    <color name="selectorMenuButton">#515151</color>
+    <color name="selectorMenuTransparent">#99515151</color>
+
+    <color name="selectorMenuTransparentHover">#99404040</color>
+    <color name="selectorMenu">#454545</color>
+    <color name="menuSelectedOption">#00AFF0</color>
+    <color name="listItemSelected">#7FF0FF</color>
+    <color name="blueseperatorline">#013D75</color>
+    <color name="lightblue">#039fb8</color>
+    <color name="lightblue_tran">#EB00AFF0</color>
+    <color name="lightblueselection">#58C9F3</color>
+    <color name="lightblueselection_tran">#EB58C9F3</color>
+
+    <color name="blue_theme">#093691</color>
+    <color name="blue_step_header">#0D1F45</color>
+    <color name="spliter">#CED6E9</color>
+    <color name="gray_text_color_postjob">#818181</color>
+
+
+    <color name="selected_color">#A51300</color>
+    <color name="wheel_chair_color">#C69E6F</color>
+    <color name="house_color">#E4DDA7</color>
+    <color name="sold_color">#3A4F51</color>
+    <color name="empty_color">#989898</color>
+
+
+    <color name="red_brush">#FF5F58</color>
+    <color name="yellow_brush">#F3CA3E</color>
+    <color name="green_brush">#2AC940</color>
+    <color name="blue_brush">#3399FF</color>
+    <color name="black_brush">#000000</color>
+    <color name="privacy_policy_text_color">#3DA9D6</color>
+
+
+
+
+</resources>

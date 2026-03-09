@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SavePictureActivity">
+
+    <group android:enabled="true" >
+        <item
+            android:id="@+id/dropp3"
+            android:icon="@drawable/plus_round_icon"
+            android:title="@string/add_mangel"
+            />
+
+        <item
+            android:id="@+id/droppy4"
+            android:icon="@drawable/flaw_listing"
+            android:title="@string/mangel_listing"
+            />
+    </group>
+</menu>

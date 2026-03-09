@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_menu_camera">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/iv_sync"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sync_red_bg"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tick_blue"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/translucent_dark_half"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white_text_color"
+            android:visibility="gone"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

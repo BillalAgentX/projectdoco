@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<dimen name="card_heading_1">53sp</dimen>
+    <dimen name="card_heading_2">40sp</dimen>
+    <dimen name="card_heading_3">34sp</dimen>
+
+    <dimen name="card_company_icon_width">480dp</dimen>
+    <dimen name="card_company_icon_height">266dp</dimen>
+    <dimen name="card_corner_radius_5dp">13dp</dimen>
+    <dimen name="card_margin_8dp">21dp</dimen>
+    <dimen name="card_padding_16dp">42dp</dimen>
+    <dimen name="card_salary_bar_height_20dp">53dp</dimen>
+    <dimen name="card_salary_bar_container_padding_5dp">13dp</dimen>
+    <dimen name="card_salary_bar_container_padding_10dp">26dp</dimen>
+    <dimen name="card_salary_bar_container_stroke_2dp">5dp</dimen>
+    <dimen name="card_salary_bar_stroke_1dp">2dp</dimen>
+    <dimen name="card_salary_bar_text_diff_5dp">13dp</dimen>-->
+
+    <dimen name="card_heading_1">22sp</dimen>
+    <dimen name="card_heading_2">17sp</dimen>
+    <dimen name="card_heading_3">15sp</dimen>
+
+    <dimen name="profile_company_icon_width">140dp</dimen>
+    <dimen name="profile_company_icon_height">80dp</dimen>
+
+    <dimen name="card_company_icon_width">180dp</dimen>
+    <dimen name="card_company_icon_height">100dp</dimen>
+    <dimen name="card_corner_radius_5dp">5dp</dimen>
+    <dimen name="card_margin_10dp">20dp</dimen>
+    <dimen name="card_margin_25dp">30dp</dimen>
+    <dimen name="card_padding_16dp">22dp</dimen>
+    <dimen name="card_salary_bar_height_20dp">20dp</dimen>
+    <dimen name="card_salary_bar_container_padding_5dp">10dp</dimen>
+    <dimen name="card_salary_bar_container_padding_10dp">10dp</dimen>
+    <dimen name="card_salary_bar_container_stroke_2dp">2dp</dimen>
+    <dimen name="card_salary_bar_stroke_1dp">1dp</dimen>
+    <dimen name="card_salary_bar_text_diff_5dp">5dp</dimen>
+
+    <dimen name="card_button_distance">42dp</dimen>
+
+    <dimen name="crop_image_height">330dp</dimen>
+    <dimen name="tabs_padding_crop_screen">8dp</dimen>
+
+    <dimen name="project_listing_star_width">28dp</dimen>
+    <dimen name="project_listing_star_height">28dp</dimen>
+
+
+    <dimen name="project_detail_cover_height">180dp</dimen>
+    <dimen name="project_detail_circle_width">70dp</dimen>
+    <dimen name="project_detail_circle_height">70dp</dimen>
+    <dimen name="project_detail_rect_box_height">105dp</dimen>
+    <dimen name="project_detail_count_text_size">20sp</dimen>
+
+    <dimen name="photo_screen_tabs_icon_width">40dp</dimen>
+    <dimen name="photo_screen_tabs_icon_height">40dp</dimen>
+
+    <dimen name="project_photo_width">96dp</dimen>
+    <dimen name="project_icon_height">96dp</dimen>
+    <dimen name="project_icon_start_margin">10dp</dimen>
+    <dimen name="project_icon_top_margin">2dp</dimen>
+
+    <dimen name="project_photo_width_1">100dp</dimen>
+    <dimen name="project_icon_height_1">100dp</dimen>
+    <dimen name="project_icon_start_margin_1">8dp</dimen>
+
+    <dimen name="project_icon_start_margin_parent">108dp</dimen>
+
+    <dimen name="photo_filter_header_left_padding">25dp</dimen>
+    <dimen name="photo_filter_header_left_padding_edittext">33dp</dimen>
+    <dimen name="photo_filter_words_left_padding_edittext">32dp</dimen>
+    <dimen name="photo_filter_search_bar_width">125dp</dimen>
+    <dimen name="photo_filter_search_bar_height">30dp</dimen>
+
+    <dimen name="photo_filter_icon_width">26dp</dimen>
+    <dimen name="photo_filter_icon_height">26dp</dimen>
+
+    <dimen name="photo_filter_view_height">55dp</dimen>
+
+    <dimen name="short_mangel_next_button_height">45dp</dimen>
+    <dimen name="short_mangel_button_height">48dp</dimen>
+
+
+    <dimen name="short_mangel_project_photo_width">140dp</dimen>
+    <dimen name="short_mangel_project_photo_height">140dp</dimen>
+
+    <dimen name="login_top_margin">130dp</dimen>
+    <dimen name="login_logo_width">100dp</dimen>
+    <dimen name="login_logo_height">100dp</dimen>
+    <dimen name="login_1st_field_top_margin">50dp</dimen>
+
+    <dimen name="capture_camera_height">90dp</dimen>
+
+
+    <dimen name="plan_direction_screen_view_height">50dp</dimen>
+    <dimen name="plan_direction_screen_view_width">50dp</dimen>
+    <dimen name="plan_direction_screen_icons_view_width">75dp</dimen>
+
+
+    <dimen name="filter_width">100dp</dimen>
+
+    <dimen name="plan_detail_top_margin">110dp</dimen>
+    <dimen name="plan_detail_toolbar_height">55dp</dimen>
+</resources>

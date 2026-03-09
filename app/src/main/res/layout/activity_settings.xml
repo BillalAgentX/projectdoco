@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_back"
+        android:title="@string/settings"
+        android:titleTextColor="@color/white_text_color"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_parent"
+            android:padding="16dp">
+
+            <Switch
+                android:id="@+id/activate_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/enable_gps" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+
+            <Switch
+                android:id="@+id/gps_only_geo_referenced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:text="@string/find_position_with_gps_only_only_for_geo_referenced_plans" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc"
+                android:layout_marginTop="10dp"/>
+
+            <Switch
+                android:id="@+id/view_direction_compass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="@string/viewing_direction_through_compass_functions" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/gps_scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="@string/gps_scale"
+                android:textColor="@color/black_text_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="#dcdcdc" />
+
+            <Switch
+                android:id="@+id/auto_load_last_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/automatically_load_last_project" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+
+            <Switch
+                android:id="@+id/auto_load_last_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/automatically_load_last_plan" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+            <Switch
+                android:id="@+id/allow_sync_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="@string/allow_sync_in_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+            <Switch
+                android:id="@+id/sync_photos_on_mobile_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/sync_photos_over_mobile_net" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+            <Switch
+                android:id="@+id/sync_photos_on_wlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/sync_photos_over_wlan" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+
+
+            <Switch
+                android:id="@+id/sync_minimize_photos_via_mobile_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:text="@string/minimize_photo_setting_message" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdcdc" />
+            <Switch
+                android:id="@+id/sync_photos_ascending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/sync_photos_ascending" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="#dcdcdc" />
+
+
+            <Switch
+                android:id="@+id/sync_photos_before_on_mobile_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="@string/sync_photos_before_sending_over_mobile_net" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="#dcdcdc" />
+
+
+
+            <Switch
+                android:id="@+id/sync_photos_before_on_wlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/sync_photos_before_sending_over_wlan" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+
+                android:background="#dcdcdc" />
+
+            <Switch
+                android:id="@+id/reload_images_original_wlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/reload_images_with_original_size_over_wlan" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+
+                android:background="#dcdcdc" />
+
+
+
+            <Switch
+                android:id="@+id/first_load_newest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/first_load_newest_images" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+
+                android:background="#dcdcdc" />
+
+            <Switch
+                android:id="@+id/buzzword_favorites_in_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/buzzwords_favorites_view_in_preview" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/camera_resolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/camera_resolution"
+                android:textColor="@color/black_text_color" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                android:text="@string/logout_label"
+                android:textColor="@color/black_text_color" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

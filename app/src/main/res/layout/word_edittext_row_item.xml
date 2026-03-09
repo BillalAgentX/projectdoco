@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp"
+    android:paddingTop="15dp"
+    android:paddingRight="27dp"
+    android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/error_indicator" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:scrollHorizontally="true"
+        android:text="@string/project"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_search_number"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:paddingLeft="@dimen/size8"
+        android:paddingRight="@dimen/size8"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@drawable/et_rounded_crnor_gry_background" />
+
+</RelativeLayout>

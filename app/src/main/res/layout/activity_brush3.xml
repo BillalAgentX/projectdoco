@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_dark_translucent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/brush"
+        app:titleTextColor="@color/white_text_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/line"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/iv_brush_size_1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:contentDescription="Save"
+                android:duplicateParentState="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/white_line_thin"
+                android:textColor="@color/black_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_brush_size_2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:contentDescription="Save"
+                android:duplicateParentState="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/white_line_medium"
+                android:textColor="@color/black_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_brush_size_3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:contentDescription="Save"
+                android:duplicateParentState="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/white_line_thick"
+                android:textColor="@color/black_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_red_color"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_marginStart="@dimen/card_corner_radius_5dp"
+                android:layout_weight="1"
+                android:contentDescription="Comment"
+                android:duplicateParentState="true"
+                android:src="@drawable/red_circle"
+                android:textColor="@color/white_text_color" />
+
+
+            <ImageView
+                android:id="@+id/iv_yellow_color"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:contentDescription="Plan"
+                android:duplicateParentState="true"
+                android:src="@drawable/yellow_cricle"
+                android:textColor="@color/white_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_green_color"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:contentDescription="Tag"
+                android:duplicateParentState="true"
+                android:src="@drawable/green_circle"
+                android:textColor="@color/white_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_blue_color"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:contentDescription="record"
+                android:duplicateParentState="true"
+                android:src="@drawable/blue_circle"
+                android:textColor="@color/white_text_color" />
+
+            <ImageView
+                android:id="@+id/iv_black_color"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/brush_image_height"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:src="@drawable/black_circle" />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/ll_icons"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_weight="1">
+
+
+        <com.projectdocupro.mobile.canvasview.CanvasView
+            android:id="@+id/canvasView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/tv_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/size15"
+            android:layout_toLeftOf="@+id/tv_hold"
+
+            android:background="@drawable/before_meal_selector2"
+
+            android:gravity="center"
+
+
+            android:padding="12dp"
+            android:src="@drawable/icon_edit_new"
+
+            android:text="Edit"
+            app:tint="@drawable/brush_circle_selector" />
+
+
+        <ImageView
+            android:id="@+id/tv_hold"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginBottom="@dimen/size15"
+            android:background="@drawable/before_meal_selector2"
+            android:gravity="center"
+
+            android:padding="12dp"
+            android:src="@drawable/icon_hold"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16"
+            app:tint="@drawable/brush_circle_selector" />
+
+    </RelativeLayout>
+
+
+    <!--    <com.projectdocupro.mobile.utility.VScroll-->
+    <!--        android:id="@+id/vScroll"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@id/ll_icons"-->
+    <!--        android:layout_below="@+id/toolbar"-->
+    <!--        android:layout_marginTop="3dp"-->
+    <!--        android:layout_marginBottom="-3dp"-->
+    <!--        android:background="@color/settings_background_dark_translucent">-->
+
+    <!--        <com.projectdocupro.mobile.photoview.PhotoViewPainting-->
+    <!--            android:id="@+id/photoEditorView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_below="@+id/toolbar"-->
+    <!--            android:background="@color/color_black" />-->
+    <!--        &lt;!&ndash;  <com.test.projectdocu.utility.HScroll android:id="@+id/hScroll"-->
+    <!--              android:layout_width="match_parent" android:layout_height="match_parent"-->
+    <!--              android:background="@color/settings_background_dark_translucent"-->
+
+    <!--              >-->
+    <!--          </com.test.projectdocu.utility.HScroll>&ndash;&gt;-->
+    <!--    </com.projectdocupro.mobile.utility.VScroll>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/brush_settings"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cross_fill"
+            android:text="@string/cancel"
+            android:textColor="@color/white_text_color"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/brush_color"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_tick_fill"
+            android:textColor="@color/white_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

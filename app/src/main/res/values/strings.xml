@@ -1,0 +1,415 @@
+<resources>
+    <string name="app_name">projectdocu pro</string>
+
+
+    <string name="main_menu_title">Main Menu</string>
+    <string name="main_menu_drawer_open">Drawer Open</string>
+    <string name="main_menu_drawer_close">Drawer Close</string>
+    <string-array name="main_menu_entry_strings">
+        <item>Camera</item>
+        <item>Local images</item>
+        <item>Select project</item>
+        <item>Select plan</item>
+        <item>Settings</item>
+        <item>About projectdocu</item>
+        <item>Help</item>
+    </string-array>
+    <string name="email">Login:</string>
+    <string name="project">Project:</string>
+    <string name="project_without_colon">Project</string>
+    <string name="project_type_all">All Projects</string>
+    <string name="project_type_favorites">Favorite projects</string>
+    <string name="project_type_all_short">All</string>
+    <string name="project_type_favorites_short">Favorites</string>
+    <string name="plan_type_all">Select plan</string>
+    <string name="plan_type_mobile">Favorite Plans</string>
+    <string name="plan_type_all_short">All</string>
+    <string name="plan_type_mobile_short">Plans</string>
+    <string name="local_photos_title">Local images</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_camera_resolution">Camera resolution</string>
+    <string name="settings_auto_gps_distance_title">Automatic photo plan location by</string>
+    <string name="settings_camera_resolution_title">Camera Resolution</string>
+    <string name="settings_auto_gps_distance_deactivated">Deaktivate</string>
+    <string name="settings_resolution">Resolution</string>
+    <string name="settings_deletetimer">Image deletion reminder</string>
+    <string name="settings_compass_correction">Compass correction</string>
+    <string-array name="settings_entry_strings">
+        <item>Image direction through compass function (Only usable with GEO referenced plans)</item>
+        <item>GPS aktivation</item>
+        <item>Confirm location through GPS(Only useable with GEO referenced plans)</item>
+        <item>Load latest project automatically</item>
+        <item>Load latest plan automatically</item>
+        <item>Syncronise images through mobile network</item>
+        <item>Compress images throgh mobile network</item>
+        <item>Syncronise images through WiFi (LAN)</item>
+        <item>Compress images throgh WiFi (LAN)</item>
+        <item>Reload images with original size through WiFi (LAN)</item>
+        <item>Allow Synchronisation in Backend</item>
+        <item>Always synchronise the newest images first</item>
+        <item>Show Tag-Favorites in image view</item>
+        <item>Camera resolution</item>
+        <item>Auto-GPS-Distance</item>
+        <item>Image deletion reminder</item>
+        <item>Compass correction</item>
+    </string-array>
+    <string name="error_dialog_title">Error</string>
+    <string name="attention_dialog_title">Caution</string>
+    <string name="show_tutorial_dialog">Would you like to see the instruction?</string>
+    <string name="user_logout_dialog">Do you really want to log out?</string>
+    <string name="delete_location_dialog">Do you want to delete current location?</string>
+    <string name="login_error">Login failed, please check your credentials.</string>
+    <string name="unvalid_user_error">No user is logged in currently.</string>
+    <string name="unvalid_project_error">No project is selected currently.</string>
+    <string name="project_update_error">The selected project is not available because of network error.</string>
+    <string name="plan_update_error">The selected plan is not available because of network error.</string>
+    <string name="photo_not_found_error">The image is not found.</string>
+    <string name="photo_in_sync_error">The image is in process of syncronization and could not be deleted.</string>
+    <string name="send_error_report">Do you want to send an error report?</string>
+    <string name="delete_photo_dialog">Do you really want to delete the image?</string>
+    <string name="delete_flag_dialog">Do you really want to delete the location?</string>
+    <string name="which_photos_to_delete_dialog">Which image do you want to delete?</string>
+    <string name="project_not_fully_syncronized_dialog">Not all project details are synchronised! Do you still want to delete the project with all details?</string>
+    <string name="plan_not_fully_syncronized_dialog">Not all plan details are synchronised! Do you still want to delete the plan with all details?</string>
+    <string name="remove_syncronized_project_dialog">Do you want to delete the plan with all details?</string>
+    <string name="remove_syncronized_plan_dialog">Do you want to delete the plan with all details?</string>
+    <string-array name="delete_photo_options">
+        <item>All</item>
+        <item>Older than 1 week</item>
+        <item>Older than 2 weeks</item>
+        <item>Older than 3 weeks</item>
+        <item>Older than 4 weeks</item>
+        <item>Cancel</item>
+    </string-array>
+    <string name="toast_loading_project">Lode Project: </string>
+    <string name="toast_loading_plan">Lode Plan: </string>
+    <string name="toast_location_deleted">Location deleted</string>
+    <string name="toast_location_saved">Location saved</string>
+    <string name="ok">Ok</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="photos_to_synchronize">Image(s) synchronise</string>
+    <string name="photo_description_title">Image description</string>
+    <string name="photo_memo_title">Voice recording</string>
+    <string name="photo_tags_title">Image tagging</string>
+    <string name="tags">Tags:</string>
+    <string name="tags_type_all">All</string>
+    <string name="tags_type_favorites">Favorites</string>
+    <string name="photo_description_save_confirmation_text">Description saved!</string>
+    <string name="memos_list_title_text">Voice recording</string>
+    <string name="key_plan_list_array_adapter_plan_width">KEY_PLAN_WIDTH</string>
+    <string name="key_plan_list_array_adapter_plan_height">KEY_PLAN_HEIGHT</string>
+    <string name="key_plan_list_array_adapter_localpdphotoid">KEY_LOCALPDPHOTOID</string>
+    <string name="login_screen">Login</string>
+    <string name="project_selection">Select project</string>
+    <string name="plan_selection">Select plan</string>
+    <string name="show_plan">Plan view</string>
+    <string name="show_photo">Image view</string>
+    <string name="local_photos">Local images</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About projectdocu</string>
+    <string name="help">Help</string>
+    <string name="empty" />
+    <string name="error_report_sent">Error report is sent to ProjectDocu. </string>
+    <string name="error_report_failed">Error report could not be sent.</string>
+    <string name="text_enter_username">User name</string>
+    <string name="text_enter_password">Password</string>
+    <string name="text_remember_logindata">Remember credentials</string>
+    <string name="text_forgot_password">Forget password?</string>
+    <string name="text_forgot_password_heading">Forget password</string>
+    <string name="text_register_user">Register as new user?</string>
+    <string name="toast_gps_out_of_range">Position not within the plan!</string>
+    <string name="toast_gps_accuraccy_imprecise_info">GPS Position is not accurate!</string>
+    <string name="toast_gps_accuraccy_info">GPS signal accuracy:</string>
+    <string name="toast_plan_auto_gps_located">Image will be located to GPS position!</string>
+    <string name="toast_gps_no_signal">No GPS signal!</string>
+    <string name="toast_plan_no_gps_reference">Plan is not GPS referenced! GPS position could not be assigned.</string>
+    <string name="toast_plan_no_auto_gps">Auto GPS is not possible. GPS not accurate!</string>
+    <string name="toast_auto_position_off">Auto GPS deactivated</string>
+    <string name="toast_auto_position_on">Auto GPS activated</string>
+    <string name="toast_auto_direction_off">Auto compass deactivated</string>
+    <string name="toast_auto_direction_on">Auto compass activated</string>
+    <string name="toast_plan_not_loaded">No plan is loaded, Location is not possible!</string>
+    <string name="sync_stats_header">Synchronisation status</string>
+    <string name="sync_stats_photos_total">Total images:</string>
+    <string name="sync_stats_photos_original">Images in original synchronised:</string>
+    <string name="sync_stats_photos_reduced">Images compression synchronised:</string>
+    <string name="sync_stats_photos_unsynced">Images aren\'t synchronised yet:</string>
+    <string name="toast_project_not_syncronized">Project aren\'t synchronised yet!</string>
+    <string name="toast_plan_not_syncronized">Plan aren\'t synchronised yet!</string>
+    <string name="about_us_text">Die projectdocu Erfolgsgeschichte | Praxisgerecht und innovativ\n\nAuf Anfrage von GroÃŸunternehmen wurde projectdocu fÃ¼r komplexe Bauprojekte entwickelt. In der Referenzphase sind kleine und mittelstÃ¤ndische Unternehmen hinzugetreten, um projectdocu als StandardlÃ¶sung zu etablieren. Das 2012 gegrÃ¼ndete Unternehmen ist in DÃ¼sseldorf und MÃ¼lheim an der Ruhr ansÃ¤ssig und beschÃ¤ftigt heute ein vielseitiges Team vom praxiserfahrenen Bauingenieur bis hin zum innovativen IT-Experten.\n\nImpressum\nprojectdocu GmbH\n\nBÃ¼ro B67\nFriedhofstraÃŸe 140\n45478 MÃ¼lheim an der Ruhr\n\nPhone +49 (0)208-30 99 27-0\nFax  +49 (0)208-30 99 27-99\n\nE-Mail: info@projectdocu.com\nWeb: www.projectdocu.com\n\nSteuernummer: 103/5753/2264\nUst.-Ident.-Nr.: DE287566381\n\nSitz der Gesellschaft: DÃ¼sseldorf\nHandelsregister DÃ¼sseldorf: HRB-Nr. 68804\n\nGeschÃ¤ftsfÃ¼hrer: AndrÃ© Henniger, Stefan Schrock\n\nDatenschutz\nDatenschutz@projectdocu.de\nhttps://www.projectdocu.com/content/datenschutz\n</string>
+    <string name="toast_selection_mode_info">To turn off selection mode, click the chare button for 1 second.</string>
+    <string name="toast_synchronisation_restarted">Synchronisation process is started</string>
+    <string name="toast_login_failed">Login not possible. Wrong username or password</string>
+    <string name="check_credentials">Please check your credentials and try again.</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_add_project">Add Project</string>
+
+    <string name="menu_camera">Camera</string>
+    <string name="menu_plans">Plans</string>
+    <string name="menu_photos">Photos</string>
+    <string name="menu_defects_managment">Defects Management</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About Project Docu</string>
+    <string name="menu_manual">Manual</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="english_label">English</string>
+    <string name="german_label">German</string>
+    <string name="place_label">City:</string>
+    <string name="company_label">Company:</string>
+    <string name="photos_label">Photos:</string>
+    <string name="photos_label_2">Photos</string>
+    <string name="open_label">Open</string>
+    <string name="defects">Defects</string>
+    <string name="company_new_project_filed">Company</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_name_new">Projectname</string>
+
+    <string name="city">City</string>
+    <string name="info_heading">Info Heading</string>
+    <string name="info_sub_heading">Info Sub Heading</string>
+    <string name="info">Info</string>
+
+    <string name="enable_gps">Activate GPS</string>
+    <string name="find_position_with_gps_only_only_for_geo_referenced_plans">Find position with GPS only (Only for Geo-referenced plans)</string>
+    <string name="viewing_direction_through_compass_functions">Viewing direction through compass functions</string>
+    <string name="gps_scale">GPS Scale</string>
+    <string name="automatically_load_last_project">Automatically load last project</string>
+    <string name="automatically_load_last_plan">Automatically load last plan</string>
+    <string name="sync_photos_over_mobile_net">Sync photos over mobile net</string>
+    <string name="sync_photos_before_sending_over_mobile_net">Sync photos before sending over mobile net</string>
+    <string name="sync_photos_over_wlan">Sync photos over wlan</string>
+    <string name="sync_photos_ascending">Sync photos ascending</string>
+
+    <string name="sync_photos_before_sending_over_wlan">Sync photos before sending over wlan</string>
+    <string name="reload_images_with_original_size_over_wlan">Reload images with original size over wlan</string>
+    <string name="allow_sync_in_background">Allow sync in background</string>
+    <string name="first_load_newest_images">First load newest images</string>
+    <string name="buzzwords_favorites_view_in_preview">Buzzwords favorites view in preview</string>
+    <string name="camera_resolution">Camera Resolution</string>
+    <string name="logout_label">Logout</string>
+    <string name="error_enter_username">Enter Username</string>
+    <string name="error_enter_password">Enter Password</string>
+    <string name="save">Save</string>
+    <string name="number">Number:</string>
+    <string name="select_customer">Choose Customer</string>
+    <string name="search">Search</string>
+    <string name="brush_settings">Brush Settings</string>
+    <string name="brush_color">Brush Color</string>
+    <string name="group">Group</string>
+    <string name="new_word">New Word</string>
+    <string name="create_new_project">Add Project</string>
+    <string name="select_group">Select Group</string>
+
+    <string name="dialog_title">Alert</string>
+    <string name="enter_project_name">Enter name</string>
+    <string name="enter_city">Enter city</string>
+    <string name="tab_favorite">Favorites</string>
+    <string name="tab_all">All</string>
+    <string name="tab_lastused">Recent</string>
+    <string name="tab_lastused_new">Last used</string>
+    <string name="message">Message</string>
+    <string name="project_created">Project created</string>
+    <string name="project_created_new">Create project</string>
+    <string name="projects">Projects</string>
+    <string name="project_details">Overview</string>
+    <string name="slogan_description">Slogan Description</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="local">Local</string>
+    <string name="online">Online</string>
+    <string name="save_photo">Save Photo</string>
+    <string name="list">List</string>
+    <string name="comments">Add Photo Description</string>
+    <string name="notes">Notes</string>
+    <string name="add_description">Add Description</string>
+    <string name="description">Description</string>
+    <string name="add_word">Add Word</string>
+    <string name="defect_details">Defect Details</string>
+    <string name="record_audio">Recordings</string>
+    <string name="plan_detail">Plan Detail</string>
+    <string name="word_name_empty">Enter new word before saving</string>
+    <string name="error_create_project">Unable to create Project</string>
+    <string name="brush">Sketch</string>
+    <string name="unable_create_tag" translatable="true">Unable to create the tag.</string>
+    <!--Filter -->
+    <string name="filter_by">Filter By:</string>
+    <string name="reset_filter">Reset</string>
+    <string name="filter">Filter</string>
+
+
+    <string name="heading_status">Status</string>
+    <string name="heading_art">Art</string>
+    <string name="heading_gewerk">Gewerk/Firm</string>
+    <string name="heading_deadline">Deadline</string>
+    <string name="heading_responsible">Responsible</string>
+    <string name="heading_creator">Creator</string>
+    <string name="heading_date">Date</string>
+    <string name="infos">Info</string>
+
+
+    <string name="start_date">Date From:</string>
+    <string name="end_date">Date To:</string>
+    <string name="notice_date">Noted</string>
+    <string name="notify_date">Deadline</string>
+    <string name="done_date">Done</string>
+    <string name="open_status">Open</string>
+    <string name="deadline">Deadline expired</string>
+    <string name="progress_status">Progress</string>
+    <string name="close_status">Close</string>
+    <string name="restleistung_art">Restleistung</string>
+    <string name="mangel_art">Mangel</string>
+    <string name="discipline">Discipline</string>
+    <string name="photo_description">Photo Description</string>
+
+
+    <!--Photos Filter -->
+
+    <string name="heading_sorting">Sorting</string>
+    <string name="heading_created_date">Date</string>
+    <string name="heading_photo_number">Number</string>
+    <string name="heading_photo_desc">Description</string>
+    <string name="heading_localized_photo">Localized Photos</string>
+    <string name="heading_photo_keyword">Keyword</string>
+    <string name="heading_photo_plans">Plans</string>
+    <string name="heading_photo_switch_decs">Described Photo</string>
+    <string name="heading_photo_switch_keyword">Tagged Photo</string>
+    <string name="heading_photo_creator">Creator</string>
+
+
+    <string name="done_date_filter">Done</string>
+    <string name="open_status_filter">Open</string>
+    <string name="progress_status_filter">Progress</string>
+
+
+    <string name="sort_asc_by_date">Ascending by Date</string>
+    <string name="sort_des_by_date">Descending by Date</string>
+    <string name="sort_run_id_asc_by_date">Ascending by number</string>
+    <string name="sort_run_id_des_by_date">Descending by number</string>
+
+
+    <string name="defect_screen_priorities">Priority</string>
+    <string name="defect_screen_highest_priorities">High</string>
+    <string name="defect_screen_lowest_priorities">Low</string>
+
+    <string name="defect_screen_frist">Frist</string>
+    <string name="defect_screen_days">Days</string>
+    <string name="defect_screen_flaw_name">Defect Name</string>
+    <string name="defect_screen_flaw_name_empty_msg">Empty error name cannot be saved</string>
+    <string name="next">Next</string>
+    <string name="title">Title</string>
+    <string name="enter_title_msg">Please enter report title</string>
+    <string name="enter_description_msg">Please enter report description</string>
+    <string name="report_photo_switch_msg">Plan attach to report</string>
+    <string name="photos">Photos</string>
+    <string name="report">Report</string>
+    <string name="report_menu">Report</string>
+    <string name="create_report_title">Create Report</string>
+    <string name="choose_photos_report_title">Choose Photos</string>
+    <string name="report_choose_photo_msg">Please choose some images to move forward.</string>
+
+    <string name="no_internet_message">Connection Problem. Please check your internet connection and try again</string>
+    <string name="server_unreachable_message">We are unable to connect with server. Kindly try later</string>
+    <string name="minimize_photo_setting_message">Minimize photos via mobile data network</string>
+
+    <string name="total_photo_title_sync_screen">Total Photos:</string>
+    <string name="sync_photo_title_sync_screen">Synchronized photos</string>
+    <string name="un_sync_photo_title_sync_screen">Photos not synced yet:</string>
+
+    <string name="shortly_sync_photo_title_sync_screen">Synchronize photo reduced:</string>
+
+
+    <string name="total_defect_title_sync_screen">Total Defects:</string>
+    <string name="sync_defect_sync_screen">Synchronized defects:</string>
+    <string name="un_sync_defect_title_sync_screen">Defects not synced yet:</string>
+
+    <string name="project_defect_title_sync_screen">Project Defects:</string>
+    <string name="project_defect_msg">Empty defect name can\'t sync</string>
+
+
+    <string name="project_photo_title_sync_screen">Project Photos:</string>
+    <string name="project_sync_photo_title_sync_screen">Synchronized photos:</string>
+    <string name="project_un_sync_photo_title_sync_screen">Photos not synced yet:</string>
+    <string name="sync_status_title_screen">Sync Status</string>
+
+
+    <string name="add_mangel">Create Defect</string>
+    <string name="mangel_listing">Flaw List</string>
+    <string name="mangel_detail">Flaw Detail</string>
+    <string name="mangel_detail_2">Open Detail</string>
+    <string name="quick_mangel">Quick Add</string>
+
+
+    <string name="no_defect_lisiting">No</string>
+
+    <string name="sync_label">Synchronize</string>
+    <string name="brush_size_label">Brush Size</string>
+    <string name="undo_label">Undo</string>
+    <string name="synchronize">Synchronize</string>
+
+
+    <string name="already_sync_project_msg">Please wait project is syncing?</string>
+    <string name="sync_project_before_msg">The project has not been synchronized yet. Do you want to synchronize the project?</string>
+    <string name="unsync_project_msg">Are you sure you want to unsync project and delete all data against it?</string>
+    <string name="sync_project_msg">Are you want to sync this project it may take some time?</string>
+    <string name="plan_photo_crop_msg">The croped image has been saved</string>
+    <string name="dircard_changes_defect_msg">Do you want to save?</string>
+    <string name="user_logout_msg">If you log out now, all data in this app will be removed! Are you sure?</string>
+    <string name="image_delete_msg">Are you sure you want to delete the image?</string>
+    <string name="plan_location_delete_msg">Are you sure you want to delete the plan location?</string>
+    <string name="defect_delete_msg">Are you sure you want to delete this defect?</string>
+    <string name="app_permission_msg">The app needs more permissions! Please activate these in the system settings of the mobile phone!</string>
+    <string name="enter_keyword_msg">Please enter the text keyword.</string>
+
+    <string name="created_date">Created Date</string>
+
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+
+    <string name="custom_dialog_title"></string>
+
+    <string name="unscyned_photo_message">photos needs to get synced. Do you want to start syncing process now?</string>
+    <string name="image_syncing">Image is syncing. You will be able to delete it after syncing completes.</string>
+
+    <string name="gps_settings">GPS settings</string>
+    <string name="gps_settings_des">GPS is not enabled. Do you want to go to settings menu?</string>
+
+
+    <string name="abous_us_new">Imprint\n\nprojectdocu GmbH\n\nBÃ¼ro B67\nFriedhofstraÃŸe 140\n45478 MÃ¼lheim an der Ruhr\nGermany\n\nPhone: +49 208-30 99 27-0\nFax: +49 208-30 99 27 -99\n\nE-mail: info@projectdocu.com\nInternet: www.projectdocu.com\n\nHRB 33902 Amtsgericht Duisburg\nCEO: AndrÃ© Henniger, Stefan Schroc\n\nUSt-IdNr.: DE287566381\n\nTerms and conditions\nhttps://projectdocu.com/information/\n\nData privacy\nhttps://projectdocu.com/datenschutz
+</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="sensor_error_message">Sensor not available</string>
+    <string name="location_error_message">Location not available</string>
+
+
+    <string name="cardinal_direction_north">North</string>
+    <string name="cardinal_direction_northeast">Northeast</string>
+    <string name="cardinal_direction_east">East</string>
+    <string name="cardinal_direction_southeast">Southeast</string>
+    <string name="cardinal_direction_south">South</string>
+    <string name="cardinal_direction_southwest">Southwest</string>
+    <string name="cardinal_direction_west">West</string>
+    <string name="cardinal_direction_northwest">Northwest</string>
+
+    <string name="cardinal_direction_north_abbreviation">N</string>
+    <string name="cardinal_direction_east_abbreviation">E</string>
+    <string name="cardinal_direction_south_abbreviation">S</string>
+    <string name="cardinal_direction_west_abbreviation">W</string>
+    <string name="please_calibate">Bitte kalibrieren Sie Ihr Gerät, um korrekte Ergebnisse zu erhalten</string>
+
+
+</resources>
+

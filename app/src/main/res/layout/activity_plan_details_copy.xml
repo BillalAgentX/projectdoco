@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PlanDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="@color/white_text_color"
+        app:title="Plan Detail"
+        app:layout_constraintTop_toTopOf="parent"/>
+ <!--   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+
+        android:background="@color/color_grey"
+        android:layout_height="match_parent" >
+
+        <com.test.projectdocu.utility.ZoomViewCustom
+        android:id="@+id/SeaingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >-->
+
+           <!-- <ImageView
+                android:id="@+id/img_large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/dragon_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
+            <com.projectdocupro.mobile.photoview.PhotoView
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dragon_image"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                />
+      <!--  </com.test.projectdocu.utility.ZoomViewCustom>
+
+    </ScrollView>-->
+    <ImageView
+        android:id="@+id/crosshair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_margin="20dp"
+        android:background="@color/color_grey"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/crosshair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rotation_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_margin="20dp"
+        android:background="@color/color_transparent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/rotation_arrow_top"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="              CLICK              "
+        android:textSize="14sp"
+        android:minWidth="200dp"
+        android:background="@color/color_white"
+        android:id="@+id/tv_test_data"
+        tools:ignore="MissingConstraints" />
+    <include layout="@layout/progress_bar_material"
+        android:id="@+id/progress_bar_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

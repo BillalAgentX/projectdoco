@@ -1,0 +1,86 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <item name="badgeTextSize" type="dimen" format="float">36.0</item>
+    <dimen name="qrcode">150dp</dimen>
+    <dimen name="textsize12">13.0sp</dimen>
+    <dimen name="sizeTabText">14dp</dimen>
+    <dimen name="size8">8.0dip</dimen>
+    <dimen name="size9">9.0dip</dimen>
+    <dimen name="size10">10.0dip</dimen>
+    <dimen name="size11">11.0dip</dimen>
+    <dimen name="size12">12.0dip</dimen>
+    <dimen name="size13">13.0dip</dimen>
+    <dimen name="size14">14.0dip</dimen>
+    <dimen name="size15">15.0dip</dimen>
+    <dimen name="textsize16">16.0sp</dimen>
+    <dimen name="buttonTextSize">17.0sp</dimen>
+    <dimen name="textsize17">19.0sp</dimen>
+    <dimen name="textSize18">20sp</dimen>
+    <dimen name="sizebutton15">15.0dip</dimen>
+    <dimen name="size16">16.0dip</dimen>
+    <dimen name="size17">17.0dip</dimen>
+    <dimen name="size130">160dp</dimen>
+    <item format="float" name="invoice_item_weight_left" type="dimen">1</item>
+    <item format="float" name="invoice_item_weight_right" type="dimen">2</item>
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="size18">18.0dip</dimen>
+    <dimen name="size20">20.0dip</dimen>
+    <dimen name="size22">22.0dip</dimen>
+    <dimen name="size24">24.0dip</dimen>
+    <dimen name="size26">26.0dip</dimen>
+    <dimen name="size30">30.0dip</dimen>
+    <dimen name="size35">35.0dip</dimen>
+    <dimen name="size50">50.0dip</dimen>
+    <dimen name="size300">300dp</dimen>
+    <dimen name="addPlacePading">16dp</dimen>
+    <dimen name="menuItemHeight">100dp</dimen>
+    <dimen name="menuItemTop">15dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+    <dimen name="marginBottom">20dp</dimen>
+    <dimen name="titlePading">5dp</dimen>
+    <item name="routeThickness" type="integer">10</item>
+    <dimen name="shareImage">300dp</dimen>
+    <dimen name="advertiseImage">110dp</dimen>
+
+    <dimen name="messageImage">200dp</dimen>
+    <dimen name="poster_width">120dip</dimen>
+    <dimen name="poster_height">156dip</dimen>
+    <dimen name="poster_width_small">80dip</dimen>
+    <dimen name="poster_height_small">104dip</dimen>
+    <dimen name="news_heading">35sp</dimen>
+
+    <dimen name="thumbnail_height">64dp</dimen>
+    <dimen name="thumbnail_width">64dp</dimen>
+
+    <dimen name="crop_image_height">300dp</dimen>
+
+
+    <dimen name="brush_image_height">35dp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="sp20">20sp</dimen>
+    <dimen name="sp22">22sp</dimen>
+    <dimen name="sp24">24sp</dimen>
+    <dimen name="sp26">26sp</dimen>
+    <dimen name="sp28">28sp</dimen>
+    <dimen name="sp30">30sp</dimen>
+    <dimen name="sp32">32sp</dimen>
+
+    <dimen name="done_margin_top">25dp</dimen>
+    <dimen name="done_margin_start">30dp</dimen>
+
+    <dimen name="brush_size_one">100dp</dimen>
+    <dimen name="brush_size_two">100dp</dimen>
+    <dimen name="brush_size_three">150dp</dimen>
+
+
+
+</resources>

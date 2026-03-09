@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+<!--
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+-->
+
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+
+        android:name="com.projectdocupro.mobile.ProjectNavigator"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.RecentUsedWordsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.AppManualActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.PlanDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.AddPhotoDirectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.BrushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.BrushActivity2"
+            
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.ReportPhotosActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.DefectDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.DefectDetailsActivity2"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.RecordAudioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.AddWordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.WordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.PrivacyPolicyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.PrivacyPolicyWebviewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.ForgotPasswordWebviewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.PhotosActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name="com.projectdocupro.mobile.activities.BrushActivity3"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+
+            android:name="com.projectdocupro.mobile.receivers.WLanReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.projectdocupro.mobile.activities.PlansActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.AddCommentActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+
+            />
+        <activity
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:name="com.projectdocupro.mobile.activities.SavePictureActivity"
+            android:theme="@style/AppTheme_trasn"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+
+            />
+
+        <activity
+            android:exported="true"
+            android:name=".activities.QiblaDirectionCompass"
+            android:theme="@style/AppTheme_trasn"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.DefectsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.InfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.NewProjectActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.HomeActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.photoview.ViewPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.ShareDeleteLocalPhotosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.fragments.add_direction.PhotoAddDirectionMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"-->
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.ProjectDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.fragments.add_direction.PlanAddDirectionMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.fragments.add_direction.VIewPlanAddDirectionMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.fragments.add_direction.PhotoAddDirectionMainActivity2Testing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.SyncStatusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.activities.DefectSyncStatusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name="com.projectdocupro.mobile.fragments.add_direction.ProjectDocuMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+
+            android:name="com.projectdocupro.mobile.service.SyncLocalPhotosService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.projectdocupro.mobile.service.syncLocalDefetcsDataService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:exported="true" android:name="com.projectdocupro.mobile.receivers.ProjectDocuNetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.projectdocupro.mobile.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

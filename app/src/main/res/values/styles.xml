@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    <style name="generalnotitle" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>   <!-- //this -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="actionMenuTextColor">@color/white_text_color</item>
+    </style>
+
+    <style name="AppTheme_trasn" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:itemBackground">@color/transparent</item>
+    </style>
+
+    <style name="ActionBar.SemiTransp" parent="AppTheme.NoActionBar">
+        <item name="displayOptions">showHome|showTitle</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.SemiTranspActionBar" parent="AppTheme.NoActionBar">
+        <item name="actionBarStyle">@style/ActionBar.SemiTransp</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Dialog_Theme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <style name="TextAppearance44">
+        <item name="android:textColor">#FFFFFF</item>[
+    </style>
+
+    <style name="MyDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+
+        <!-- Fill the screen -->
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BorderlessButtonTextAttributes" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="BorderlessButtonStyle" parent="BorderlessButtonTextAttributes">
+
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SavePictureActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_parent_90_ori"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/black"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_photo_preview_section_90_ori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:rotation="270"
+            android:layout_below="@+id/ll_bottom_camera_view_90_ori">
+
+            <!--   <com.test.projectdocu.utility.ZoomViewCustom
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">-->
+
+            <com.projectdocupro.mobile.photoview.PhotoView
+                android:id="@+id/captured_image_90_ori"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            <!--</com.test.projectdocu.utility.ZoomViewCustom>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recent_words_rv_90_ori"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="180dp"
+                android:rotation="0"
+
+                 />
+
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:theme="@style/AppTheme.AppBarOverlay"-->
+            <!--            android:background="@color/red"-->
+            <!--            android:rotation="90"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            app:elevation="0dp">-->
+
+            <ImageView
+                android:id="@+id/toolbar1_90_ori"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_back"
+                android:visibility="gone"
+                android:rotation="90"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/size12"
+                android:layout_marginRight="@dimen/size8"
+                />
+
+            <ImageView
+                android:id="@+id/iv_delete_90_ori"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/delete_icon"
+                android:visibility="gone"
+                android:rotation="0"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/size12"
+                android:layout_marginRight="@dimen/size8"
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_camera_view_90_ori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/card_corner_radius_5dp"
+            android:paddingBottom="@dimen/card_corner_radius_5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/iv_delete_rotated_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.8"
+                android:rotation="270"
+                android:visibility="visible"
+                android:src="@drawable/delete_icon" />
+            <TextView
+                android:id="@+id/tv_cancel_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:rotation="0"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/iv_camera_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/capture_camera_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:paddingTop="@dimen/size8"
+                android:paddingBottom="@dimen/size8"
+                android:rotation="270"
+                android:src="@drawable/capture" />
+
+            <ImageView
+                android:id="@+id/iv_flash_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.8"
+                android:rotation="0"
+                android:visibility="visible"
+                android:src="@drawable/flash_off" />
+
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_camera_area_90_ori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_bottom_camera_view_90_ori"
+            android:visibility="visible" />
+        <LinearLayout
+            android:id="@+id/ll_icons_90_ori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_bottom_camera_view_90_ori"
+            android:background="@color/translucent_with_80_per"
+            android:orientation="horizontal"
+            android:rotation="0"
+            android:visibility="visible"
+            android:paddingBottom="@dimen/size12"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl_word_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/word_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:contentDescription="Save"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_save"
+                    android:textColor="@color/black_text_color" />
+
+                <ImageView
+                    android:id="@+id/word_done_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_comment_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/comment_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:contentDescription="Save"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_comment"
+                    android:textColor="@color/white_text_color" />
+                <ImageView
+                    android:id="@+id/comment_done_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_plan_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/plan_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="Plan"
+                    android:src="@drawable/ic_plans"
+                    android:textColor="@color/white_text_color" />
+                <ImageView
+                    android:id="@+id/plan_done_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_defects_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/defects_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="Plan"
+                    android:src="@drawable/ic_menu_flaws"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:id="@+id/defects_done_90_ori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_record_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/record_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="Plan"
+                    android:src="@drawable/ic_record"
+                    android:textColor="@color/white_text_color" />
+                <ImageView
+                    android:id="@+id/record_done_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_brush_90_ori"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:rotation="270"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/brush_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="Plan"
+                    android:src="@drawable/ic_brush"
+                    android:textColor="@color/white_text_color" />
+                <ImageView
+                    android:id="@+id/brush_done_90_ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:contentDescription="Save"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <ListView
+            android:id="@+id/simpleListView_90_ori"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_crnor_transluent_background"
+            android:layout_below="@id/ll_icons_90_ori"
+            android:divider="@color/translucent_dark"
+            android:dividerHeight="1dp"
+            android:rotation="270"
+            android:visibility="visible" />
+
+
+
+        <ImageView
+            android:id="@+id/toolbar_90_ori"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/size12"
+            android:layout_marginTop="@dimen/size8"
+            android:layout_marginBottom="@dimen/size15"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_back"
+            android:rotation="270"
+            android:visibility="visible" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

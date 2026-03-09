@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DefectsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/menu_photos"
+        app:titleTextColor="@color/white_text_color" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/ll_bottom_tabs"
+        android:background="#ececec"
+        />
+    <LinearLayout
+        android:id="@+id/ll_bottom_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gry_filter_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/size12">
+
+        <ImageView
+            android:id="@+id/iv_share_photo"
+            android:layout_width="@dimen/photo_filter_icon_width"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/share_photo" />
+
+        <ImageView
+            android:id="@+id/iv_report_photo"
+            android:layout_width="@dimen/photo_filter_icon_width"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/report_photo" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

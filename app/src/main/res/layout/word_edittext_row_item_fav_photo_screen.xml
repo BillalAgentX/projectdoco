@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp">
+
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/error_indicator"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/clock_word"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_clock_grey"/>
+
+    <ImageView
+        android:id="@+id/selected_word"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_unselected_word"/>
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:textColor="@color/black_text_color"
+        android:maxLines="1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="room number"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        />
+
+    <EditText
+        android:id="@+id/et_search_number"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:paddingLeft="@dimen/size8"
+        android:paddingRight="@dimen/size8"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:layout_below="@id/sub_title"
+        android:imeOptions="actionDone"
+        android:layout_toLeftOf="@id/favorite_word_icon"
+         />
+
+    <ImageView
+        android:id="@+id/favorite_word_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_not_favorite"/>
+
+
+
+
+
+</RelativeLayout>

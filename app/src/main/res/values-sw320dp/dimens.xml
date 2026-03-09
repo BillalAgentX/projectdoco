@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="plan_detail_top_margin">110dp</dimen>
+    <dimen name="plan_detail_toolbar_height">55dp</dimen>
+</resources>
