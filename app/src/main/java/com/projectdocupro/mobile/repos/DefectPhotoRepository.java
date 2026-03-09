@@ -85,6 +85,7 @@ public class DefectPhotoRepository {
 
     }
 
+/*
     public void insertParalel(PhotoModel allPlansModel) {
         var allLocalSaved = getmDefectsPhotoDao().getDefectPhotosList(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
         boolean isAlreadyAnyImageSaved = false;
@@ -100,42 +101,60 @@ public class DefectPhotoRepository {
 
             Utils.showLogger("imgAlreadyExists");
             if (!oldImg.isPhotoCached() && !isAlreadyAnyImageSaved) {
-                cacheImages(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+                cacheImagesParallel(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
                 //mAsyncTaskDao.insert(params[0]);
             }
         } else {
             Utils.showLogger("AddingimgAlreadyExists");
             mDefectsPhotoDao.insert(allPlansModel);
             if (!isAlreadyAnyImageSaved)
-                cacheImages(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+                cacheImagesParallel(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
         }
 
         // new insertAsyncTask(mDefectsPhotoDao).execute(allPlansModel);
     }
+*/
+
+
+    void insertAllImagesOneByOne(List<PhotoModel> photoModels) {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                for (int i = 0; i < photoModels.size(); i++) {
+                    insertSerial(photoModels.get(i));
+                }
+            }
+        });
+        thread.start();
+    }
+
 
     public void insertSerial(PhotoModel allPlansModel) {
-        var allLocalSaved = getmDefectsPhotoDao().getDefectPhotosList(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
-        boolean isAlreadyAnyImageSaved = false;
+      //  var allLocalSaved = getmDefectsPhotoDao().getDefectPhotosList(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
 
-        for (var obj : allLocalSaved) {
+     /*   for (var obj : allLocalSaved) {
             if (obj.isPhotoCached())
                 isAlreadyAnyImageSaved = true;
-        }
+        }*/
 
         var oldImg = mDefectsPhotoDao.getPhotoModelGlobal(Long.parseLong(allPlansModel.getPdphotoid()));
 
         if (oldImg != null) {
 
             Utils.showLogger("imgAlreadyExists");
-            if (!oldImg.isPhotoCached() && !isAlreadyAnyImageSaved) {
+            if (!oldImg.isPhotoCached()) {
                 cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+                //cacheProjectImages2(mContext,oldImg);
                 //mAsyncTaskDao.insert(params[0]);
             }
         } else {
             Utils.showLogger("AddingimgAlreadyExists");
             mDefectsPhotoDao.insert(allPlansModel);
-            if (!isAlreadyAnyImageSaved)
-                cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+           // cacheProjectImages2(mContext,allPlansModel);
+            cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+            //if (!isAlreadyAnyImageSaved)
+            //cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
         }
 
         // new insertAsyncTask(mDefectsPhotoDao).execute(allPlansModel);
@@ -145,10 +164,11 @@ public class DefectPhotoRepository {
         new DeleteAsyncTask(mDefectsPhotoDao).execute();
     }
 
-    public void cacheImages(String projectId, String flaw_id) {
+    public void cacheImagesParallel(String projectId, String flaw_id) {
         //Utils.showLogger("startCacheInGalary");
         new CachePhotoAsyncTask(mDefectsPhotoDao).execute(projectId, flaw_id);
     }
+
 
     public void cacheImages2(String projectId, String flaw_id) {
 
@@ -158,6 +178,7 @@ public class DefectPhotoRepository {
                 if (defectPhotoModelList.get(i).getPohotPath() != null && !defectPhotoModelList.get(i).getPohotPath().equals("") && defectPhotoModelList.get(i).isPhotoCached()) {
 
                 } else {
+                    
                     cacheProjectImages2(mContext, defectPhotoModelList.get(i));
                 }
             }
@@ -181,12 +202,12 @@ public class DefectPhotoRepository {
 
             if (oldImg != null) {
                 if (!oldImg.isPhotoCached()) {
-                    cacheImages(params[0].getProjectId(), params[0].getFlaw_id());
+                    cacheImagesParallel(params[0].getProjectId(), params[0].getFlaw_id());
                     //mAsyncTaskDao.insert(params[0]);
                 }
             } else {
                 mAsyncTaskDao.insert(params[0]);
-                cacheImages(params[0].getProjectId(), params[0].getFlaw_id());
+                cacheImagesParallel(params[0].getProjectId(), params[0].getFlaw_id());
             }
 
             return null;
@@ -348,15 +369,16 @@ public class DefectPhotoRepository {
     }
 
 
-    public void cacheProjectImages(boolean isFirst, Context context, PhotoModel projectModel) {
+/*    public void cacheProjectImages(boolean isFirst, Context context, PhotoModel projectModel) {
         callGetPlanImageAPI(isFirst, context, projectModel, projectModel.getPdphotoid());
-    }
+    }*/
 
     public void cacheProjectImages2(Context context, PhotoModel projectModel) {
-        callGetPlanImageAPI2(context, projectModel, projectModel.getPdphotoid());
+        callGetPlanImageAPISeries(context, projectModel, projectModel.getPdphotoid());
     }
 
-    private void callGetPlanImageAPI(boolean isFirst, Context context, PhotoModel projectModel, String fileId) {
+/*
+    private void callGetPlanImageAPI(boolean isFirst, Context context, PhotoModel photoModel, String fileId) {
 
         SharedPrefsManager sharedPrefsManager = new SharedPrefsManager(context);
         RetroApiInterface retroApiInterface = RetrofitManager.getInstance().create(RetroApiInterface.class);
@@ -379,15 +401,15 @@ public class DefectPhotoRepository {
                 if (response.isSuccessful()) {
                     if (response.body() != null) {
                         Log.d("List", "Success : " + response.body());
-                        if (writeResponseBodyToDisk(response.body(), projectModel.getProjectId())) {
+                        if (writeResponseBodyToDisk(response.body(), photoModel.getProjectId())) {
                             if (imagePath != null && !imagePath.equals("")) {
-                                projectModel.setPohotPath(imagePath);
-                                projectModel.setPath(imagePath);
-                                projectModel.setPhotoCached(true);
-                                Utils.showLogger2("firing" + projectModel.getLocal_flaw_id());
+                                photoModel.setPohotPath(imagePath);
+                                photoModel.setPath(imagePath);
+                                photoModel.setPhotoCached(true);
+                                Utils.showLogger2("firing" + photoModel.getLocal_flaw_id());
                                 if (isFirst)
-                                    reloadThePage.postValue(projectModel);
-                                new UpdateAsyncTask(mDefectsPhotoDao, reloadThePage).execute(projectModel);
+                                    reloadThePage.postValue(photoModel);
+                                new UpdateAsyncTask(mDefectsPhotoDao, reloadThePage).execute(photoModel);
 
                             }
 //                            Bitmap bitmap  =   BitmapFactory.decodeFile(imagePath);
@@ -414,9 +436,10 @@ public class DefectPhotoRepository {
             }
         });
     }
+*/
 
 
-    private void callGetPlanImageAPI2(Context context, PhotoModel projectModel, String fileId) {
+    private void callGetPlanImageAPISeries(Context context, PhotoModel projectModel, String fileId) {
 
         SharedPrefsManager sharedPrefsManager = new SharedPrefsManager(context);
         RetroApiInterface retroApiInterface = RetrofitManager.getInstance().create(RetroApiInterface.class);

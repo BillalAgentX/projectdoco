@@ -19,6 +19,7 @@ import com.projectdocupro.mobile.managers.AppConstantsManager;
 import com.projectdocupro.mobile.managers.RetrofitManager;
 import com.projectdocupro.mobile.managers.SharedPrefsManager;
 import com.projectdocupro.mobile.models.DefectsModel;
+import com.projectdocupro.mobile.models.PhotoModel;
 import com.projectdocupro.mobile.utility.Utils;
 
 import org.json.JSONObject;
@@ -57,7 +58,7 @@ public class DefectRepository {
     private DefectsDao mDefectDao;
     private LiveData<List<DefectsModel>> mAllDefects;
 
-    public MutableLiveData<List<DefectsModel>> loadDefectOnUi=new MutableLiveData<>();
+    public MutableLiveData<List<DefectsModel>> loadDefectOnUi = new MutableLiveData<>();
     private MutableLiveData<Boolean> isProgressComplete = new MutableLiveData<>();
     public MutableLiveData<Boolean> isSyncAllDefects = new MutableLiveData<>();
     public MutableLiveData<Boolean> reloadPage = new MutableLiveData<>();
@@ -244,6 +245,9 @@ public class DefectRepository {
                 Utils.showLogger("DefectRepository>>231");
                 local_flaw_id = mAsyncTaskDao.insert(defectsModel);
 
+                List<PhotoModel> photosToSyncLater = new ArrayList<>();
+
+
                 if (defectsModel.pdflawflagList != null && defectsModel.pdflawflagList.size() > 0) {
                     for (int i = 0; i < defectsModel.pdflawflagList.size(); i++) {
 
@@ -254,6 +258,9 @@ public class DefectRepository {
                         pdFlawFlagRepository.insert(defectsModel.pdflawflagList.get(i));
                     }
                 }
+
+
+                defectPhotoRepository.insertAllImagesOneByOne(photosToSyncLater);
 
                 Utils.showLogger("addingImagesLogic");
                 if (defectsModel.defectPhotoModelList != null) {
@@ -269,8 +276,10 @@ public class DefectRepository {
                         defectsModel.defectPhotoModelList.get(i).setPhotoUploadStatus(LocalPhotosRepository.SYNCED_PHOTO);
                         defectsModel.defectPhotoModelList.get(i).setLocal_flaw_id(local_flaw_id + "");
 
-                        defectPhotoRepository.insertParalel(defectsModel.defectPhotoModelList.get(i));
-//                       mRepository.cacheProjectImages(myApplication,defectsModel.defectPhotoModelList.get(i));
+                        //if (i == 0)
+                          //  defectPhotoRepository.insertParalel(defectsModel.defectPhotoModelList.get(i));
+
+                        photosToSyncLater.add(defectsModel.defectPhotoModelList.get(i));
                     }
                 }
 

@@ -14,7 +14,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -139,13 +138,13 @@ public class DefectDetailsPhotoFragment extends Fragment {
             defect_type = ((DefectDetailsActivity) getActivity()).defect_type;
             photoId = ((DefectDetailsActivity) getActivity()).photoId;
             if (server_flaw_id != null && !server_flaw_id.equals(""))
-                localPhotosViewModel.getLocalPhotosRepository().cacheImages(projectId, server_flaw_id);
+                localPhotosViewModel.getLocalPhotosRepository().cacheImagesParallel(projectId, server_flaw_id);
         } else if (getActivity() != null && getActivity() instanceof DefectDetailsActivity2) {
             server_flaw_id = ((DefectDetailsActivity2) getActivity()).flaw_id;
             defect_type = ((DefectDetailsActivity2) getActivity()).defect_type;
             photoId = ((DefectDetailsActivity2) getActivity()).photoId;
             if (server_flaw_id != null && !server_flaw_id.equals(""))
-                localPhotosViewModel.getLocalPhotosRepository().cacheImages(projectId, server_flaw_id);
+                localPhotosViewModel.getLocalPhotosRepository().cacheImagesParallel(projectId, server_flaw_id);
         }
 //        new ReterivePhotoDesAsyncTask(getActivity()).execute();
         localPhotosViewModel.getLocalPhotosRepository().getmDefectedPhotos().observe(getActivity(), new Observer<List<PhotoModel>>() {
@@ -386,6 +385,7 @@ public class DefectDetailsPhotoFragment extends Fragment {
         void onLcoalPhotoFragmentInteraction(Uri uri);
     }
 
+/*
     private class RetrievePhotoObjAsyncTask extends AsyncTask<String, Void, List<PhotoModel>> {
         private PhotoDao mAsyncTaskDao;
 
@@ -419,6 +419,7 @@ public class DefectDetailsPhotoFragment extends Fragment {
             recyclerView.setAdapter(localPhotosViewModel.getAdapter());
         }
     }
+*/
 
 
 /*
