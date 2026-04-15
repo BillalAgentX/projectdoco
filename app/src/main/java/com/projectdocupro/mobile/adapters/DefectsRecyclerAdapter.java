@@ -37,7 +37,7 @@ public class DefectsRecyclerAdapter extends RecyclerView.Adapter<DefectsRecycler
     DefectsListItemClickListener listener;
     private Context context;
 
-    public boolean showImages = false;
+    public boolean showImages = true;
 
     public List<DefectsModel> getDefectsModels() {
         return defectsModels;

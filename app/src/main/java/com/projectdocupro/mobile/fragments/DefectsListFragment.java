@@ -352,7 +352,7 @@ public class DefectsListFragment extends Fragment implements DefectsListItemClic
                 @Override
                 public void onClick(View view) {
                     if (adapter != null)
-                        adapter.setShowImages(!defectsActivity.img_Or_List.isSelected());
+                        adapter.setShowImages(defectsActivity.img_Or_List.isSelected());
                     defectsActivity.img_Or_List.setSelected(!defectsActivity.img_Or_List.isSelected());
                     adapter.notifyDataSetChanged();
                 }
@@ -550,6 +550,8 @@ public class DefectsListFragment extends Fragment implements DefectsListItemClic
             ProjectsDatabase projectsDatabase = ProjectsDatabase.getDatabase(context);
             mAsyncTaskDao = projectsDatabase.photoDao();
             mDefectDao = projectsDatabase.defectsDao();
+
+            showProgressbar();
 //            defectsList=new ArrayList<>();
         }
 
@@ -603,6 +605,7 @@ public class DefectsListFragment extends Fragment implements DefectsListItemClic
         @Override
         protected void onPostExecute(List<DefectsModel> defectsModels) {
             super.onPostExecute(defectsModels);
+            hideProgressbar();
 //            if(isFound)
 //                Toast.makeText(getActivity(), "isFound.", Toast.LENGTH_LONG).show();
             if (getActivity() != null)
@@ -688,7 +691,7 @@ public class DefectsListFragment extends Fragment implements DefectsListItemClic
             if ((DefectsActivity) getActivity() instanceof DefectsActivity) {
                 DefectsActivity defectsActivity = (DefectsActivity) getActivity();
                 if (adapter != null) {
-                    if (defectsActivity.img_Or_List.isSelected()) {
+                    if (!defectsActivity.img_Or_List.isSelected()) {
                         // DefectsModel defectsModel = defectsModelListt.get(currentObjectPos);
                         Intent intent = new Intent(getActivity(), DefectDetailsActivity2.class);
                         intent.putExtra(ARG_PROJECT_ID, defectsModel.getProjectId());

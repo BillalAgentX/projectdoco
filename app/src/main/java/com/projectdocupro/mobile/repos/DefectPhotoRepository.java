@@ -35,7 +35,7 @@ public class DefectPhotoRepository {
     public MutableLiveData<PhotoModel> reloadThePage = new MutableLiveData<>();
     private PhotoDao mDefectsPhotoDao;
     private LiveData<List<PhotoModel>> mDefectedPhotos = new MediatorLiveData<>();
-    private String imagePath;
+    //private String imagePath;
     DefectedProjectPhotosRecyclerAdapter photosRecyclerAdapter;
     Context mContext;
     private List<PhotoModel> defectPhotoModelList;
@@ -131,7 +131,7 @@ public class DefectPhotoRepository {
 
 
     public void insertSerial(PhotoModel allPlansModel) {
-      //  var allLocalSaved = getmDefectsPhotoDao().getDefectPhotosList(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+        //  var allLocalSaved = getmDefectsPhotoDao().getDefectPhotosList(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
 
      /*   for (var obj : allLocalSaved) {
             if (obj.isPhotoCached())
@@ -144,15 +144,15 @@ public class DefectPhotoRepository {
 
             Utils.showLogger("imgAlreadyExists");
             if (!oldImg.isPhotoCached()) {
-                cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+                serialCacheAllImagesOfDefect(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
                 //cacheProjectImages2(mContext,oldImg);
                 //mAsyncTaskDao.insert(params[0]);
             }
         } else {
             Utils.showLogger("AddingimgAlreadyExists");
             mDefectsPhotoDao.insert(allPlansModel);
-           // cacheProjectImages2(mContext,allPlansModel);
-            cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
+            // cacheProjectImages2(mContext,allPlansModel);
+            serialCacheAllImagesOfDefect(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
             //if (!isAlreadyAnyImageSaved)
             //cacheImages2(allPlansModel.getProjectId(), allPlansModel.getFlaw_id());
         }
@@ -170,7 +170,7 @@ public class DefectPhotoRepository {
     }
 
 
-    public void cacheImages2(String projectId, String flaw_id) {
+    public void serialCacheAllImagesOfDefect(String projectId, String flaw_id) {
 
         defectPhotoModelList = getmDefectsPhotoDao().getDefectPhotosList(projectId, flaw_id);
         if (defectPhotoModelList != null)
@@ -178,15 +178,17 @@ public class DefectPhotoRepository {
                 if (defectPhotoModelList.get(i).getPohotPath() != null && !defectPhotoModelList.get(i).getPohotPath().equals("") && defectPhotoModelList.get(i).isPhotoCached()) {
 
                 } else {
-                    
-                    cacheProjectImages2(mContext, defectPhotoModelList.get(i));
+
+                    if (i == 0)
+                        cacheImagesInSequestion(mContext, defectPhotoModelList.get(i));
                 }
             }
 
         //Utils.showLogger("startCacheInGalary");
-        new CachePhotoAsyncTask(mDefectsPhotoDao).execute(projectId, flaw_id);
+        // new CachePhotoAsyncTask(mDefectsPhotoDao).execute(projectId, flaw_id);
     }
 
+/*
     private class insertAsyncTask extends AsyncTask<PhotoModel, Void, Void> {
         private PhotoDao mAsyncTaskDao;
 
@@ -218,6 +220,7 @@ public class DefectPhotoRepository {
             super.onPostExecute(unused);
         }
     }
+*/
 
 
     private static class UpdateAsyncTask extends AsyncTask<PhotoModel, Void, Void> {
@@ -262,7 +265,8 @@ public class DefectPhotoRepository {
                     if (defectPhotoModelList.get(i).getPohotPath() != null && !defectPhotoModelList.get(i).getPohotPath().equals("") && defectPhotoModelList.get(i).isPhotoCached()) {
 
                     } else {
-                        cacheProjectImages(i == 0, mContext, defectPhotoModelList.get(i));
+                        if (i != 0)
+                            cacheProjectImages(false, mContext, defectPhotoModelList.get(i));
                     }
                 }
 
@@ -304,8 +308,8 @@ public class DefectPhotoRepository {
         }
     }
 
-    private boolean writeResponseBodyToDisk(ResponseBody body, String projectId) {
-        imagePath = "";
+    private String writeResponseBodyToDisk(ResponseBody body, String projectId) {
+        String imagePath = null;
         try {
             // todo change the file location/name according to your needs
 
@@ -351,9 +355,9 @@ public class DefectPhotoRepository {
 
                 outputStream.flush();
 
-                return true;
+                return imagePath;
             } catch (IOException e) {
-                return false;
+                return null;
             } finally {
                 if (inputStream != null) {
                     inputStream.close();
@@ -364,20 +368,19 @@ public class DefectPhotoRepository {
                 }
             }
         } catch (IOException e) {
-            return false;
+            return null;
         }
     }
 
 
-/*    public void cacheProjectImages(boolean isFirst, Context context, PhotoModel projectModel) {
+    public void cacheProjectImages(boolean isFirst, Context context, PhotoModel projectModel) {
         callGetPlanImageAPI(isFirst, context, projectModel, projectModel.getPdphotoid());
-    }*/
+    }
 
-    public void cacheProjectImages2(Context context, PhotoModel projectModel) {
+    public void cacheImagesInSequestion(Context context, PhotoModel projectModel) {
         callGetPlanImageAPISeries(context, projectModel, projectModel.getPdphotoid());
     }
 
-/*
     private void callGetPlanImageAPI(boolean isFirst, Context context, PhotoModel photoModel, String fileId) {
 
         SharedPrefsManager sharedPrefsManager = new SharedPrefsManager(context);
@@ -401,20 +404,20 @@ public class DefectPhotoRepository {
                 if (response.isSuccessful()) {
                     if (response.body() != null) {
                         Log.d("List", "Success : " + response.body());
-                        if (writeResponseBodyToDisk(response.body(), photoModel.getProjectId())) {
-                            if (imagePath != null && !imagePath.equals("")) {
-                                photoModel.setPohotPath(imagePath);
-                                photoModel.setPath(imagePath);
-                                photoModel.setPhotoCached(true);
-                                Utils.showLogger2("firing" + photoModel.getLocal_flaw_id());
-                                if (isFirst)
-                                    reloadThePage.postValue(photoModel);
-                                new UpdateAsyncTask(mDefectsPhotoDao, reloadThePage).execute(photoModel);
+                        String imagePath = writeResponseBodyToDisk(response.body(), photoModel.getProjectId());
+                        if (imagePath != null && !imagePath.isEmpty()) {
+                            photoModel.setPohotPath(imagePath);
+                            photoModel.setPath(imagePath);
+                            photoModel.setPhotoCached(true);
+                            Utils.showLogger2("firing" + photoModel.getLocal_flaw_id());
+                            if (isFirst)
+                                reloadThePage.postValue(photoModel);
+                            new UpdateAsyncTask(mDefectsPhotoDao, reloadThePage).execute(photoModel);
 
-                            }
+                        }
 //                            Bitmap bitmap  =   BitmapFactory.decodeFile(imagePath);
 //                            imageView.setImageBitmap(bitmap);
-                        }
+
                     } else {
                         Log.d("List", "Empty response");
                     }
@@ -436,7 +439,6 @@ public class DefectPhotoRepository {
             }
         });
     }
-*/
 
 
     private void callGetPlanImageAPISeries(Context context, PhotoModel projectModel, String fileId) {
@@ -460,19 +462,20 @@ public class DefectPhotoRepository {
             if (response.isSuccessful()) {
                 if (response.body() != null) {
                     Log.d("List", "Success : " + response.body());
-                    if (writeResponseBodyToDisk(response.body(), projectModel.getProjectId())) {
-                        if (imagePath != null && !imagePath.equals("")) {
-                            projectModel.setPohotPath(imagePath);
-                            projectModel.setPath(imagePath);
-                            projectModel.setPhotoCached(true);
-                            reloadThePage.postValue(projectModel);
-                            mDefectsPhotoDao.update(projectModel);
+                    String imagePath = writeResponseBodyToDisk(response.body(), projectModel.getProjectId());
+
+                    if (imagePath != null && !imagePath.equals("")) {
+                        projectModel.setPohotPath(imagePath);
+                        projectModel.setPath(imagePath);
+                        projectModel.setPhotoCached(true);
+                        reloadThePage.postValue(projectModel);
+                        mDefectsPhotoDao.update(projectModel);
 
 
-                        }
+                    }
 //                            Bitmap bitmap  =   BitmapFactory.decodeFile(imagePath);
 //                            imageView.setImageBitmap(bitmap);
-                    }
+
                 } else {
                     Log.d("List", "Empty response");
                 }
